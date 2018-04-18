@@ -5,6 +5,7 @@
 .cvs
 *.bak
 *.swp
+*.vim
 Thumbs.db
 wp-config.php
 wp-content/uploads/
