@@ -8,9 +8,9 @@
 </head>
 <body>
   <header><h1>Diez Design Build</h1></header>
-  <div class="item left"><h1>Menu</h1></div>
+  <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
   <div class="item content"><h1>Content</h1></div>
-  <div class="item right"><h1>jargon</h1></div>
+  <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
   <footer><p>© 2018 - Diez Design Build</p></footer>
 
 <style>
@@ -34,7 +34,18 @@
     background-color: greenyellow;
     grid-column: 1 / -1;
   }
-    
+  .phone {
+    grid-column: 1;
+    align-self: end;
+    justify-self: end;
+  }
+  .hello {
+    width: 95%;
+  }
+  .jargon {
+    align-self: end;
+    justify-self: start;
+  }
   .content {
     border-left: 1em dashed var(--gkblue);
     border-right: 1em dashed var(--gkblue);
