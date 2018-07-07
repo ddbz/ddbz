@@ -159,3 +159,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Google Analytics - Following Instructions:
+ * http://www.wpbeginner.com/beginners-guide/how-to-install-google-analytics-in-wordpress/
+ */
+add_action('wp_head', 'wpb_add_googleanalytics');
+function wpb_add_googleanalytics() { ?>
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121963115-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121963115-1');
+</script>
+ 
+<?php }

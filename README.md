@@ -6,10 +6,10 @@ Welcome to diezDesignBuildz, a platform built using _s and Wordpress.
 Starting simple... a landing page, call to action, and going from there.
 
 * Next Steps
-  * Analytics
-  * Mailto
-  * Mobile Style
-  * Better Form
+  * ~Analytics~
+  * ~Mailto~ Contact Form / Postfix Config
+  * Mobile Steez
+  * Directory Listing / Flesh out content
   * Testimonials/Referrals/Outreach
   * Connecting the dots
     * LinkedIn
@@ -17,4 +17,5 @@ Starting simple... a landing page, call to action, and going from there.
     * IRC
     * github
     * (design?)
-  * Menu, flesh out content
+  * Wordpress Proper
+  * Publishing Platform
