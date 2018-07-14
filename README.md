@@ -1,13 +1,14 @@
 # ddBz.io
 ### diezDesignBuildz
 
-Welcome to diezDesignBuildz, a platform built using _s and Wordpress. 
+Welcome to diezDezignBuildz, a platform built using _s and Wordpress. 
 
 Starting simple... a landing page, call to action, and going from there.
 
-* Next Steps
-  * ~Analytics~
+**Next Steps:**
+  * ~Anal~ytics
   * ~Mailto~ Contact Form / Postfix Config
+  * Better Logo
   * Mobile Steez
   * Directory Listing / Flesh out content
   * Testimonials/Referrals/Outreach

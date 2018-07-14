@@ -17,42 +17,30 @@
   <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
   </div>
   <section class="content">
-    <h2>helloWorld!</h2>
-    <h3>it's me... Jordan</h3>
+    <h2>helloWorld</h2>
+    <h3>It's me... Jordan</h3>
 
-    <p>Software is hungry. They say it's eating the world. So which side of the buffet line are you on? Does technology and software serve you? Or are you being served to software?</p>
+    <p>I love what I do.</p>
 
-    <p>Scary thought. I imagine the answer is complicated. Technology can be complicated. Such is life. No worries, I'm here to help.</p>
+    <p>I love learning how things work. I find beauty in how all the assorted and occasionally complex pieces come together to function as one. How when they come together just right - BOOM - synergy - success - becoming more than the sum of the parts.</p>
 
-    <p>Welcome to diezDesignBuildz, your one stop shop for digital design/build solutions. </p>
+    <p>But they don't make things like they used to, people change, and everything pixelated and new is exponentially more complex. Never before have we been more "connected", yet in so many ways we seem to be driven further apart. </p>
 
-    <h4><a href="#">I'd like to offer my services</a></h4>
+    <p>DDBZ is how I do my part. DiezDezignBuildz is my process. I bring together my full stack of skills to map solutions and achieve goals, starting with my own. As I better develop the tools to serve myself, I'll be better able to serve you. </p>
 
-    <p>I'm passionate about leveraging technology for growth and empowerment. I'm seeking good people and fun, challenging projects. I'd love to help design/build digital solutions that grow alongside you, your business, and your communities.</p>
+    <p>I do: <span class="services">Digital Design/Build, Web Development, Graphic Design, Content Strategy, Copywriting, Marketing/SEO, and a bunch of other things...</span></p>
 
-    <p>The device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon. Pretty nuts. Now this isn't an invitation to some wild interstellar adventure, maybe someday... for now, let's talk bottle rockets.</p>
+    <p>I love what I do, but it could use more you. Want to collaborate?</p>
 
-    <p>Do you have something you'd like to launch? An idea? A business? Maybe you've already launched a little something and want to adjust the trajectory. Wanna talk boosters? Let's see if it goes up to 11.</p>
+    <h4><a href="#">... just pick up the phone ...</a></h4>
 
-    <p>We've all got rockets in our pockets, and most don't know it. The pieces are all there, ready to be put together. Let me help.</p>
+    <p>I'm passionate about leveraging technology for growth and empowerment. Do you know that the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? That's nutz. This isn't an invitation to some wild insterstellar adventure... maybe someday... for now, let's talk bottle rockets.</p>
 
-    <h4><a href="#">...just pick up the phone...</a></h4>
+    <p>Do you have something you'd like to launch? An idea? A business? The people who stand to benefit most from tech ar often the last served. Let's change that. I can help you design/build digital solutions that grow alongside you, your business, and your community. </p>
 
-    <p>I'm an adept wordsmith with a passion for pushing pixels. I've been a published photographer and 3D modeler. In my twenties I was a globe trotter, and helped snag first prize with team Denmark in the Shell Eco Marathon. After engineering school I immersed myself in three and a half blissful years of architectural design/build. It was there that I developed a lense for the big picture, and came to see that I'm at my best when I bring all my seemingly disparate skills together. That we are at our collective best when we all know how to come together. That inspired me to co-found a tech startup in the education space. Thus began my foray into cyberspace and the wonderful world of web development.</p>
+    <p>We've all got rockets in our pockets, but most don't know it. The pieces are all there, ready to be put together. </p>
 
-    <h4>...</h4>
-
-    <p>Then I got hit by a bus. Then I fell in love. Sometimes in life, we are taken off our feet, spun around and upside down. I learned to let go. I rolled with the flow. I found myself in far away places, encountering all kinds of lovely people living lives of contribution to their communities.</p>
-
-    <p>I realized that the people who stand to benefit most from tech are often the most underserved. There are so many projects, stories, and movements in need of amplification. But with technology there lies an inherent disconnect, a void between the digital and the physical. Bolstering that divide is $$$, a high barrier to entry, and the growing evidence that suggests social media is ripping apart our social fabric. </p>
-
-    <p>How do we serve anyone seeking answers in isolation? What is life if not a collaboration?</p>
-
-    <p>While I love what I do, it could use a bit more <strong>you</strong>.</p>
-
-    <h4><a href="#">So... let's collaborate!</a></h4>
-
-    <p class="quiet"><em>ddBz.io is brand new, the pieces are still being put together. If you have any questions, comments, feedback, or just want to say "hey", pick up the phone</em></p>
+    <h4><a href="#">let's play</a></h4>
   </section>
   <div class="sidebar-right">
   <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
@@ -143,6 +131,13 @@
     font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .services {
+    font-family: 'WarenhausTypenhebelStandard', monospace;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: var(--gksprout);
   }
 
   .quiet {
