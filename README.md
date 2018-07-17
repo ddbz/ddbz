@@ -6,7 +6,7 @@ Welcome to diezDezignBuildz, a platform built using _s and Wordpress.
 Starting simple... a landing page, call to action, and going from there.
 
 **Next Steps:**
-  * ~Anal~ytics
+  * ~Analytics~
   * ~Mailto~ Contact Form / Postfix Config
   * Better Logo
   * Mobile Steez
