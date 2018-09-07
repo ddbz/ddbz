@@ -60,9 +60,11 @@ a:hover {
 }
 
 header {
+  font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: 2px solid var(--gkblue);
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
   padding: 0 1em;
 }
 
@@ -77,6 +79,15 @@ header img {
   //filter: saturate(25%) brightness(115%);
 }
 
+ul#menu-menu-1, li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+}
+
+/*
 header h1 {
   justify-self: end;
   align-self: center;
@@ -87,6 +98,7 @@ h1 {
   font-weight: 200;
   margin: 0;
 }
+*/
 
 h2 {
   text-align: center;
@@ -966,7 +978,7 @@ body {
 *.entry-content:before,
 *.entry-content:after,
 *.comment-content:before,
-*.comment-content:after,
+*.comme nt-content:after,
 *.site-header:before,
 *.site-header:after,
 *.site-content:before,

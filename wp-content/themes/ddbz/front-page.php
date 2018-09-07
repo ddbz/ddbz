@@ -12,7 +12,7 @@
 <body>
   <header>
   <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
-  <h1>diezDesignBuildz</h1>
+  <?php wp_nav_menu( 'Primary' ); ?>
   </header>
   <div class="sidebar-left">
   <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
