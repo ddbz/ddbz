@@ -69,6 +69,7 @@ wp-content/themes/*
 # ignore all files starting with . or ~
 .*
 ~*
+*.bak
 
 # ignore node dependency directories (used by grunt)
 node_modules/

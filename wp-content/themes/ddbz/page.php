@@ -15,9 +15,11 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
+    <div class="sidebar-left">
+    <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
+    </div>
+    <section class="content">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -31,10 +33,11 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+    </section>
+    <div class="sidebar-right">
+    <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+    </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

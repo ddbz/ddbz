@@ -24,8 +24,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------*/
 
 :root {
-  --gkblue: #1b9cf7;
+  --gkblue: #0098FB;
+  --gkbluelt; #7fc5f7;
   --gksprout: #b8ff06;
+  --border: .1em dashed #0098FB;
 }
 
 html {
@@ -61,7 +63,7 @@ a:hover {
 
 header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
-  border-bottom: 2px solid var(--gkblue);
+  border-bottom: var(--border);
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
@@ -75,7 +77,8 @@ header, footer {
 
 
 header img {
-  height: 100%;
+  height: 45px;
+  margin-top: 5px;
   //filter: saturate(25%) brightness(115%);
 }
 
@@ -87,12 +90,12 @@ ul#menu-menu-1, li {
   margin: 0;
 }
 
-/*
 header h1 {
-  justify-self: end;
+  font-style: smallcaps;
   align-self: center;
 }
 
+/*
 h1 {
   font-size: 2.2em;
   font-weight: 200;
@@ -134,7 +137,7 @@ h4 {
 }
 
 footer {
-  border-top: 2px solid var(--gkblue);
+  border-top: var(--border);
 }
 
 footer p {
@@ -173,8 +176,8 @@ footer p {
   font-size: 1.2em;
   height: calc(vh - 100px);
   padding: 0 1.5em 0 1.5em;
-  border-left: .3em dashed var(--gkblue);
-  border-right: .3em dashed var(--gkblue);
+  border-left: var(--border);
+  border-right: var(--border);
   overflow: auto;
 }
 
