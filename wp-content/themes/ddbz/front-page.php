@@ -11,7 +11,8 @@
 </head>
 <body>
   <header>
-    <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
+    <a href="/" class="logo">
+    <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png"></a>
     <?php wp_nav_menu( 'Primary' ); ?>
   </header>
   <div class="sidebar-left">
