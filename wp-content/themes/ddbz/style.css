@@ -188,7 +188,7 @@ footer p {
 }
 
 .wpcf7-form {
-  display: none;
+  //display: none;
   //grid-template-columns: 1fr 1fr;
   //grid-gap: 1.5em;
 }
