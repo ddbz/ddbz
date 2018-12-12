@@ -1,17 +1,21 @@
 # ddBz.io
 ### diezDesignBuildz
 
-Welcome to my humble digital abode. Currently building with _s and Wordpress. 
+Welcome to my humble digital abode. Rolling with _s and Wordpress. 
 
-Starting simple... a landing page, call to action, and going from there.
+Keep it simple... a landing page, call to action, go from there.
 
 **Next Steps:**
   * ~Analytics~
-  * ~Mailto~ Contact Form / Postfix Config
   * ~Better Logo~
-  * ~Directory Listing~ / Flesh out content
+  * ~Directory Listing~ 
+  * ~Mailto Contact Form~ 
+  * ~Wordpress~ Proper
+  * Postfix Config
   * Mobile Steez
+  * Flesh out content
   * Testimonials/Referrals/Outreach
   * Connecting the dots, socially
-  * Wordpress Proper
-  * Publishing Platform
+  * Publishing 
+  * eCommerce
+  * Patreon
