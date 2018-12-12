@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-    <p>© 2018 ddBz.io</p>
+    <p>© 2018</p>
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
