@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html {
   font-family: 'Source Code Pro', monospace;
+  overflow-x: hidden;
 }
 
 body {
@@ -152,7 +153,6 @@ footer p {
   align-self: end;
   justify-self: end;
   z-index: 1;
-  //overflow: hidden;
 }
 
 .hello {
@@ -160,11 +160,12 @@ footer p {
   width: auto;
 }
 
-/* -- Seriously... these aren't even being used? */
+/* -- Seriously... these aren't even being used?
 .phone {
   object-fit: cover;
   object-position: right bottom;
 }
+*/
 
 .sidebar-right {
   grid-column: 4 / -1;
@@ -172,7 +173,6 @@ footer p {
   align-self: end;
   justify-self: start;
   z-index: 1;
-  //overflow: hidden;
 }
 
 .content {
@@ -183,7 +183,9 @@ footer p {
   padding: 0 1.5em 0 1.5em;
   border-left: var(--border);
   border-right: var(--border);
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /*-- overflow: auto; --Changed due to iOs scroll issue --*/
   //z-index: -1;
 }
 

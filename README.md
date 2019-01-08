@@ -12,7 +12,7 @@ Keep it simple... a landing page, call to action, go from there.
   * ~Mailto Contact Form~ 
   * ~Wordpress~ Proper
   * Postfix Config
-  * Mobile Steez
+  * ~Mobile~ Steez
   * Flesh out content
   * Testimonials/Referrals/Outreach
   * Connecting the dots, socially
