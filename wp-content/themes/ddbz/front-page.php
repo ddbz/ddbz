@@ -24,12 +24,14 @@
 
     <p>I love what I do.</p>
 
+    <!-- Saving for later
     <div class="tiles">
       <div class="tile"><h5>Balls</h5></div>
       <div class="tile"><h5>Cheese</h5></div>
       <div class="tile"><h5>Design</h5></div>
       <div class="tile"><h5>Diez</h5></div>
     </div>
+    -->
 
     <p>I love learning how things work. I find beauty in how all the assorted and occasionally complex pieces come together to function as one. How when they come together just right - BOOM - synergy - success - becoming more than the sum of the parts.</p>
 
