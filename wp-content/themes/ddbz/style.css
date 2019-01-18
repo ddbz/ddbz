@@ -33,8 +33,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
-	min-height: 100%;
-  height: 100%;
+  height: 100vh;
 	box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
   overflow-x: hidden;
