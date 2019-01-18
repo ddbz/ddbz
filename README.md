@@ -11,8 +11,9 @@ Keep it simple... a landing page, call to action, go from there.
   * ~Directory Listing~ 
   * ~Mailto Contact Form~ 
   * ~Wordpress~ Proper
-  * Postfix Config
+    * What's left?
   * ~Mobile~ Steez
+  * Postfix Config
   * Flesh out content
   * Testimonials/Referrals/Outreach
   * Connecting the dots, socially

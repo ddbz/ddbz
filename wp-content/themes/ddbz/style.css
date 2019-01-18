@@ -82,7 +82,7 @@ header {
 }
 
 header, footer {
-  height: 50px;
+  //height: 50px;
   grid-column: 1 / -1;
 }
 
@@ -291,6 +291,40 @@ select.wpcf7-select { /* Are there any select boxes? */
 	.column-half{
 		width: 50%;
 	}
+}
+
+@media only screen and (max-width: 55em) {
+  body {
+    grid-template-columns: 1fr 1.5em minmax(300px, 6fr) 1.5em 1fr;
+  }
+
+  header img {
+    height: 45px;
+    margin-top: 5px;
+  }
+
+  .hello {
+    height: 40vh;
+  }
+
+  .content {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 33em) {
+  body {
+    grid-template-rows: 40px 1fr 40px;
+  }
+
+  header img {
+    height: 35px;
+  }
+
+  ul#menu-menu-1, li {
+    font-size: 1.3em;
+  }
+
 }
 
 .wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 select {

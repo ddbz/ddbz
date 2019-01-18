@@ -16,7 +16,7 @@
     <?php wp_nav_menu( 'Primary' ); ?>
   </header>
   <div class="sidebar-left">
-  <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
+    <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
   </div>
   <section class="content">
     <h2>helloWorld</h2>
@@ -54,7 +54,7 @@
     <h4><a href="#">let's play</a></h4>
   </section>
   <div class="sidebar-right">
-  <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+    <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
   </div>
 <?php get_footer(); ?>
 </body>
