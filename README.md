@@ -15,6 +15,7 @@ Keep it simple... a landing page, call to action, go from there.
   * ~Mobile~ Steez
   * Postfix Config
   * Flesh out content
+  * SVG
   * Testimonials/Referrals/Outreach
   * Connecting the dots, socially
   * Publishing 

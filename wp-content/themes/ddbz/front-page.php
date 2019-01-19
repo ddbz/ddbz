@@ -15,46 +15,48 @@
     <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png"></a>
     <?php wp_nav_menu( 'Primary' ); ?>
   </header>
-  <div class="sidebar-left">
-    <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
-  </div>
-  <section class="content">
-    <h2>helloWorld</h2>
-    <h3>It's me... Jordan</h3>
-
-    <p>I love what I do.</p>
-
-    <!-- Saving for later
-    <div class="tiles">
-      <div class="tile"><h5>Balls</h5></div>
-      <div class="tile"><h5>Cheese</h5></div>
-      <div class="tile"><h5>Design</h5></div>
-      <div class="tile"><h5>Diez</h5></div>
+  <div class="main">
+    <div class="sidebar-left">
+      <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
     </div>
-    -->
+    <section class="content">
+      <h2>helloWorld</h2>
+      <h3>It's me... Jordan</h3>
 
-    <p>I love learning how things work. I find beauty in how all the assorted and occasionally complex pieces come together to function as one. How when they come together just right - BOOM - synergy - success - becoming more than the sum of the parts.</p>
+      <p>I love what I do.</p>
 
-    <p>But they don't make things like they used to, people change, and everything pixelated and new is exponentially more complex. Never before have we been more "connected", yet in so many ways we seem to be driven further apart. </p>
+      <!-- Saving for later
+      <div class="tiles">
+        <div class="tile"><h5>Balls</h5></div>
+        <div class="tile"><h5>Cheese</h5></div>
+        <div class="tile"><h5>Design</h5></div>
+        <div class="tile"><h5>Diez</h5></div>
+      </div>
+      -->
 
-    <p>DDBZ is how I do my part. Diez Design Build is my process. I bring together my full stack of skills to map solutions and achieve goals, starting with my own. As I better develop the tools to serve myself, I'll be better able to serve you. </p>
+      <p>I love learning how things work. I find beauty in how all the assorted and occasionally complex pieces come together to function as one. How when they come together just right - BOOM - synergy - success - becoming more than the sum of the parts.</p>
 
-    <p>I do: <span class="services">Digital Design/Build, Web Development, Graphic Design, Content Strategy, Copywriting, Marketing/SEO, and a bunch of other things...</span></p>
+      <p>But they don't make things like they used to, people change, and everything pixelated and new is exponentially more complex. Never before have we been more "connected", yet in so many ways we seem to be driven further apart. </p>
 
-    <p>I love what I do, but it could use more you. Want to collaborate?</p>
+      <p>DDBZ is how I do my part. Diez Design Build is my process. I bring together my full stack of skills to map solutions and achieve goals, starting with my own. As I better develop the tools to serve myself, I'll be better able to serve you. </p>
 
-    <h4><a href="#">... just pick up the phone ...</a></h4>
+      <p>I do: <span class="services">Digital Design/Build, Web Development, Graphic Design, Content Strategy, Copywriting, Marketing/SEO, and a bunch of other things...</span></p>
 
-    <p>I'm passionate about leveraging technology for growth and empowerment. Do you know that the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? That's nutz. This isn't an invitation to some wild insterstellar adventure... maybe someday... for now, let's talk bottle rockets.</p>
+      <p>I love what I do, but it could use more you. Want to collaborate?</p>
 
-    <p>Do you have something you'd like to launch? An idea? A business? The people who stand to benefit most from tech are often the last served. Let's change that. Let's design/build digital solutions that grow alongside you, your business, and your community. </p>
+      <h4><a href="#">... just pick up the phone ...</a></h4>
 
-    <p>We've all got rockets in our pockets, but most don't know it. The pieces are all there, ready to be put together. </p>
+      <p>I'm passionate about leveraging technology for growth and empowerment. Do you know that the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? That's nutz. This isn't an invitation to some wild insterstellar adventure... maybe someday... for now, let's talk bottle rockets.</p>
 
-    <h4><a href="#">let's play</a></h4>
-  </section>
-  <div class="sidebar-right">
-    <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+      <p>Do you have something you'd like to launch? An idea? A business? The people who stand to benefit most from tech are often the last served. Let's change that. Let's design/build digital solutions that grow alongside you, your business, and your community. </p>
+
+      <p>We've all got rockets in our pockets, but most don't know it. The pieces are all there, ready to be put together. </p>
+
+      <h4><a href="#">let's play</a></h4>
+    </section>
+    <div class="sidebar-right">
+      <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+    </div>
   </div>
 <?php get_footer(); ?>
 </body>

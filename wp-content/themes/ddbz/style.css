@@ -42,13 +42,13 @@ html {
 body {
   margin: 0;
   color: var(--gkblue);
-  display: grid;
+  display: flex;
   height: 100vh;
-  grid-template-columns: 2fr 2em minmax(300px, 5fr) 2em 2fr;
-  grid-template-rows: 50px 1fr 50px;
   overflow-x: hidden;
-  //grid-gap: 20px;
 }
+
+.main {
+  grid-template-columns: 2fr 2em minmax(300px, 5fr) 2em 2fr;
 
 h1, h2, h3, h4, h5 {
   font-family: 'WarenhausTypenhebelStandard', monospace;
