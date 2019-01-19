@@ -147,6 +147,8 @@ h4 {
 }
 
 footer {
+  position: sticky;
+  position: -webkit-sticky;
   border-top: var(--border);
 }
 
