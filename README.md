@@ -8,7 +8,7 @@ Keep it simple... a landing page, call to action, go from there.
 **Next Steps:**
   * ~Analytics~
   * ~Better Logo~
-  * ~Directory Listing~ 
+  * ~Menu~ 
   * ~Mailto Contact Form~ 
   * ~Wordpress~ Proper
     * What's left?
