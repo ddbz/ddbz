@@ -30,10 +30,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   --border: 2px dashed #0098FB;
 }
 
+html, body {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
-  height: 100vh;
 	box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
   overflow-x: hidden;
@@ -44,7 +49,6 @@ body {
   color: var(--gkblue);
   display: flex;
   flex-direction: column;
-  //height: 100vh;
   overflow-x: hidden;
 }
 
