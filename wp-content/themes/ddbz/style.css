@@ -32,13 +32,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html, body {
   height: 100%;
+  //width: 100%;
   overflow-y: scroll;
 }
 
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
-  height: 100vh;
 	box-sizing: border-box;
   font-family: 'Source Code Pro', monospace;
   overflow-x: hidden;
@@ -48,8 +48,7 @@ body {
   margin: 0;
   color: var(--gkblue);
   display: grid;
-  height: 100vh;
-  grid-template-columns: 2fr 2em minmax(300px, 5fr) 2em 2fr;
+  grid-template-columns: 2fr 2em 5fr 2em 2fr;
   grid-template-rows: 50px 1fr 50px;
   overflow-x: hidden;
   //grid-gap: 20px;
@@ -81,6 +80,7 @@ a.logo, a.logo:hover {
 header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: var(--border);
+  //width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column; /* This for the menu? */
@@ -187,14 +187,13 @@ footer p {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
   font-size: 1.2em;
-  height: calc(vh - 100px);
+  height: calc(100vh - 100px);
   padding: 0 1.5em 0 1.5em;
   border-left: var(--border);
   border-right: var(--border);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   /*-- overflow: auto; --Changed due to iOs scroll issue --*/
-  //z-index: -1;
 }
 
 .tiles {
@@ -301,7 +300,7 @@ select.wpcf7-select { /* Are there any select boxes? */
 
 @media only screen and (max-width: 55em) {
   body {
-    grid-template-columns: 1fr 1.5em minmax(300px, 6fr) 1.5em 1fr;
+    grid-template-columns: 1fr 1.5em 6fr 1.5em 1fr;
   }
 
   header img {
@@ -309,27 +308,42 @@ select.wpcf7-select { /* Are there any select boxes? */
     margin-top: 5px;
   }
 
+  header ul {
+    padding:0;
+  }
+
   .hello {
     height: 40vh;
   }
 
-  .content {
-    border: none;
-  }
 }
 
-@media only screen and (max-width: 33em) {
+@media only screen and (max-width: 33em) { /*-- .content height change? --*/
   body {
-    grid-template-rows: 40px 1fr 40px;
+    grid-template-rows: 35px 1fr 35px;
   }
 
   header img {
-    height: 35px;
+    height: 25px;
   }
 
   ul#menu-menu-1, li {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
+
+.sidebar-left, .sidebar-right {
+  display: none;
+}
+
+  .content {
+    grid-column: 1 / -1;
+    height: calc(100vh - 70px);
+    width: 95vw;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+  }
+
 
 }
 
