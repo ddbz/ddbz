@@ -32,7 +32,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html, body {
   height: 100%;
-  //width: 100%;
   overflow-y: scroll;
 }
 
@@ -51,7 +50,6 @@ body {
   grid-template-columns: 2fr 2em 5fr 2em 2fr;
   grid-template-rows: 50px 1fr 50px;
   overflow-x: hidden;
-  //grid-gap: 20px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -80,7 +78,6 @@ a.logo, a.logo:hover {
 header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: var(--border);
-  //width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column; /* This for the menu? */
@@ -88,7 +85,6 @@ header {
 }
 
 header, footer {
-  //height: 50px;
   grid-column: 1 / -1;
 }
 
@@ -187,7 +183,6 @@ footer p {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
   font-size: 1.2em;
-  height: calc(100vh - 100px);
   padding: 0 1.5em 0 1.5em;
   border-left: var(--border);
   border-right: var(--border);
@@ -323,6 +318,10 @@ select.wpcf7-select { /* Are there any select boxes? */
     grid-template-rows: 35px 1fr 35px;
   }
 
+  header {
+    padding: 0 .5em;
+  }
+
   header img {
     height: 25px;
   }
@@ -337,7 +336,6 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .content {
     grid-column: 1 / -1;
-    height: calc(100vh - 70px);
     width: 95vw;
     padding: 0;
     margin: 0 auto;
