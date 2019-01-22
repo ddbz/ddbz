@@ -293,7 +293,7 @@ select.wpcf7-select { /* Are there any select boxes? */
 	}
 }
 
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 65em) {
   body {
     grid-template-columns: 1fr 1.5em 6fr 1.5em 1fr;
   }
@@ -313,7 +313,7 @@ select.wpcf7-select { /* Are there any select boxes? */
 
 }
 
-@media only screen and (max-width: 33em) { /*-- .content height change? --*/
+@media only screen and (max-width: 43em) { /*-- .content height change? --*/
   body {
     grid-template-rows: 35px 1fr 35px;
   }
@@ -330,9 +330,20 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 1.2em;
   }
 
-.sidebar-left, .sidebar-right {
-  display: none;
-}
+  .sidebar-left {
+    display: none;
+  }
+
+  .sidebar-right {
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    transform: scaleX(-1);
+  }
+
+  .sidebar-right img {
+    height: 11em;
+  }
 
   .content {
     grid-column: 1 / -1;
@@ -341,7 +352,6 @@ select.wpcf7-select { /* Are there any select boxes? */
     margin: 0 auto;
     border: none;
   }
-
 
 }
 
