@@ -190,6 +190,10 @@ footer p {
   z-index: 1;
 }
 
+.mobilephone {
+  display: none;
+}
+
 .content {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
@@ -341,10 +345,11 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 1.2em;
   }
 
-  .sidebar-left {
+  .sidebar-left, .sidebar-right {
     display: none;
   }
 
+  /*
   .sidebar-right {
     position: absolute;
     bottom: .25em;
@@ -355,6 +360,20 @@ select.wpcf7-select { /* Are there any select boxes? */
   .sidebar-right img {
     height: 11em;
   }
+  */
+
+  .mobilephone {
+    display: block;
+    position: absolute;
+    bottom: .25em;
+    right: .25em;
+    height: 10vh;
+  }
+
+  .footer p {
+    top: 15%;
+  }
+
 
   .content {
     grid-column: 1 / -1;

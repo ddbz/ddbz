@@ -66,6 +66,9 @@
   <div class="sidebar-right">
     <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
   </div>
-<?php get_footer(); ?>
+  <footer id="colophon" class="site-footer">
+    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"></a>
+    <p>© 2018</p>
+  </footer>
 </body>
 </html>
