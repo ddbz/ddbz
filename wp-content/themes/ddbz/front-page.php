@@ -13,7 +13,12 @@
   <header>
     <a href="/" class="logo">
     <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png"></a>
-    <?php wp_nav_menu( 'Primary' ); ?>
+    <div class="menu-menu-1-container">
+      <ul id="menu-menu-1" class="menu">
+        <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="#diez">Diez</a></li>
+        <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="#design">Design</a></li>
+        <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="#build">Build</a></li>
+      </ul></div>
   </header>
   <div class="sidebar-left">
     <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
@@ -28,15 +33,15 @@
     
     <p>I design and build digital solutions that make real life better. I do:</p>
 
-    <p class="services">Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!</p>
+    <p class="services">Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!<br><br></p>
+    <h2 id="build">Build</h3>
     <h3>Portfolio coming soon...</h3>
     <div class="tiles">
-      <div class="tile"><h5>Balls</h5></div>
-      <div class="tile"><h5>Cheese</h5></div>
-      <div class="tile"><h5>Design</h5></div>
-      <div class="tile"><h5>Diez</h5></div>
+      <div class="tile"><h5>Image</h5></div>
+      <div class="tile"><h5>Image</h5></div>
+      <div class="tile"><h5>Image</h5></div>
     </div>
-    <h2>Design</h2>
+    <h2 id="design">Design</h2>
 
     <p>Design is what brings it, and us, all together. It solves big problems by merging knowledge and tools, ideas and people, the hardware and the software. It's about putting a deadline on a dream, and drawing our map from A to B.</p> 
 
@@ -44,7 +49,7 @@
 
     <p><a href="/contact">Giddy up.</a></p>
 
-    <h2>Diez</h2>
+    <h2 id="diez">Diez</h2>
     <h3>rhymes w/ beats</h3>
 
     <p>It's my name. Don't worry, you won't wear it out, but say it right.</p> 

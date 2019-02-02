@@ -128,15 +128,15 @@ h4 {
 
 .services {
   font-family: 'WarenhausTypenhebelStandard', monospace;
-  text-transform: uppercase;
-  font-size: 1.9em;
+  //text-transform: uppercase;
+  font-size: 4vw;
+  letter-spacing: 1vw;
+  line-height: 1.1em;
   text-align: center;
   width: fit-content;
-  border-left: var(--border);
-  border-right: var(--border);
   padding: 0 .4em;
   margin: 0 auto;
-  color: var(--gksprout);
+  //color: var(--gksprout);
 }
 
 .quiet {
@@ -214,10 +214,9 @@ footer p {
 
 .tile {
   background: white;
-  color: lightgray;
-  font-size: 1.4em;
-  padding: 10px;
-  border: var(--border);
+  color: #d3d3d300;
+  font-size: 2.6em;
+  border: 2px dashed #7fc5f7;
   text-align: center;
   box-shadow: 0 0 4px  rgba(0,0,0,0.1);
 }
@@ -326,6 +325,11 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 40vh;
   }
 
+  .services {
+    font-size: 6vw;
+    line-height: .9em;
+  }
+
 }
 
 @media only screen and (max-width: 43em) { /*-- .content height change? --*/
@@ -349,6 +353,9 @@ select.wpcf7-select { /* Are there any select boxes? */
     display: none;
   }
 
+  .services {
+    font-size: 8vw;
+  }
   /*
   .sidebar-right {
     position: absolute;
