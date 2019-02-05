@@ -12,7 +12,8 @@
 <body>
   <header>
     <a href="/" class="logo">
-    <img src="<?php echo get_template_directory_uri() ?>/images/ddbz.png"></a>
+    <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
+    <img class="dZ" src="<?php echo get_template_directory_uri() ?>/images/dZ.png"></a>
     <div class="menu-menu-1-container">
       <ul id="menu-menu-1" class="menu">
         <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="#diez">Diez</a></li>
@@ -27,13 +28,13 @@
     <h2>helloWorld</h2>
     <h3>It's me... Jordan</h3>
 
-    <p>I love solving problems. Putting the pieces together. When they come together just right... <span class="sprout">**BOOM!**</span> Becoming more than the sum of the parts.</p> 
+    <p>I love solving problems. Putting the pieces together. When they come together just right... <span class="sprout">**BOOM!**</span> ...They become more than the sum of the parts.</p> 
 
     <p>Do you know the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? Let me help you make better use of it. Do you have something you'd like to launch? An idea? A business? <a href="#">Just pick up the phone.</a></p> 
     
     <p>I design and build digital solutions that make real life better. I do:</p>
 
-    <p class="services">Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!<br><br></p>
+    <p class="services">Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!</p>
     <h2 id="build">Build</h3>
     <h3>Portfolio coming soon...</h3>
     <div class="tiles">
@@ -45,12 +46,12 @@
 
     <p>Design is what brings it, and us, all together. It solves big problems by merging knowledge and tools, ideas and people, the hardware and the software. It's about putting a deadline on a dream, and drawing our map from A to B.</p> 
 
-    <p>A is where you and I get to know each other. Grab coffee, talk shop. Get a sense of where your B might be. And why you're determined to get there. If you're anything like me, your map has all kinds of squiqqly lines with big red Xs and vast swaths of uncharted territory. The internet is a bit like the wild west. There's a lot to learn, and some things worth looking out for. Let me be your guide. I'll help you get from A to B, and maybe we can start charting a course to Z. I bring big picture thinking, a clear collaborative process, and an arsenal of skills that'll help us blow through any obstacles along the way.</p>
+    <p>A is where you and I get to know each other. Grab coffee, talk shop. Get a sense of where your B might be. And why you're determined to get there. If you're anything like me, your map has all kinds of squiggly lines with big red Xs and vast swaths of uncharted territory. The internet is a bit like the wild west. There's a lot to learn, and some things worth looking out for. Let me be your guide. I'll help you get from A to B, and maybe we can start charting a course to Z. I bring big picture thinking, a clear collaborative process, and an arsenal of skills that'll help us blow through any obstacles along the way.</p>
 
     <p><a href="/contact">Giddy up.</a></p>
 
     <h2 id="diez">Diez</h2>
-    <h3>rhymes w/ beats</h3>
+    <h3>rhymes w/ beets</h3>
 
     <p>It's my name. Don't worry, you won't wear it out, but say it right.</p> 
 
@@ -72,8 +73,8 @@
     <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
   </div>
   <footer id="colophon" class="site-footer">
-    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"></a>
-    <p>© 2018</p>
+    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a>
+    <p>© 2019</p>
   </footer>
 </body>
 </html>
