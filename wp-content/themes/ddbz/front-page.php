@@ -24,6 +24,12 @@
   <div class="sidebar-left">
     <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
   </div>
+  <div class="phoneG">
+    <img class="hello" src="<?php echo get_template_directory_uri() ?>/images/phone_g.png">
+  </div>
+  <div class="jargonG">
+    <img class="hello" src="<?php echo get_template_directory_uri() ?>/images/jargon_g.png">
+  </div>
   <section class="content">
     <h2>helloWorld</h2>
     <h3>It's me... Jordan</h3>
@@ -73,7 +79,7 @@
     <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
   </div>
   <footer id="colophon" class="site-footer">
-    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a>
+    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone_g.png">
     <p>© 2019</p>
   </footer>
 </body>
