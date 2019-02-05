@@ -173,8 +173,13 @@ footer p {
   z-index: 1;
 }
 
-.hello {
+.phone {
   height: 60vh;
+  width: auto;
+}
+
+.jargon {
+  height: 50vh;
   width: auto;
 }
 
