@@ -137,15 +137,18 @@ h4 {
 }
 
 .services {
+  //position: relative;
   font-family: 'WarenhausTypenhebelStandard', monospace;
   font-size: 4vw;
   letter-spacing: 1vw;
   line-height: 1.1em;
   text-align: center;
-  width: fit-content;
-  padding: 0 .4em;
+  width: 100;
+  padding: .2em;
   margin: 0 auto .5em auto;
   text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 .quiet {
@@ -214,12 +217,16 @@ footer p {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
   font-size: 1.2em;
-  padding: 0 1.5em 0 1.5em;
+  //padding: 0 1.5em 0 1.5em;
   border-left: var(--border);
   border-right: var(--border);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   /*-- overflow: auto; --Changed due to iOs scroll issue --*/
+}
+
+.content p, .content .tiles {
+  padding: 0 1.5em;
 }
 
 .tiles {
@@ -369,6 +376,10 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 25px;
   }
 
+  .content p, .content .tiles {
+    padding: 0 .5em;
+  }
+
   ul#menu-menu-1, li {
     font-size: 1.2em;
   }
@@ -397,7 +408,7 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .content {
     grid-column: 1 / -1;
-    width: 95vw;
+    //width: 95vw;
     padding: 0;
     margin: 0 auto;
     border: none;
@@ -457,6 +468,11 @@ span.wpcf7-not-valid-tip, div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok  {
   font-size: 1em;
   padding: 5px;
   text-align: center;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok  {
+  font-family: 'WarenhausTypenhebelStandard', monospace;
+  font-size: 1.75em;
 }
 
 span.wpcf7-not-valid-tip, div.wpcf7-validation-errors {

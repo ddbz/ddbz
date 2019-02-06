@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-    <p>© 2018</p>
+    <p>© 2019</p>
 	</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>

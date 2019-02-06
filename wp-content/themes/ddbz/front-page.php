@@ -37,7 +37,9 @@
     
     <p>I design and build digital solutions that make real life better. I do:</p>
 
-    <p class="services">Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!</p>
+    <div class="services">
+    <span>Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!</span>
+    </div>
     <h2 id="build">Build</h3>
     <h3>Portfolio coming soon...</h3>
     <div class="tiles">
