@@ -61,6 +61,7 @@ a, a:link {
   text-decoration: none;
   color: var(--gkblue);
   border-bottom: solid 3px var(--gksprout);
+  transition: all 0.75s;
 }
 
 a:hover {
@@ -69,10 +70,15 @@ a:hover {
   text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.5);
 }
 
-a.logo, a.logo:hover {
+a.logo, a.logo:hover, a.contact {
   text-decoration: none;
   border: none;
   background: none;
+}
+
+a.contact:hover img {
+  filter: none;
+  transition: all 0.75s;
 }
 
 header {
@@ -172,6 +178,13 @@ footer p {
   justify-self: end;
   z-index: 1;
 }
+
+.phoneG img, .jargonG img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: opacity(25%) grayscale(100%);
+  transition: all 0.75s;
+}
+
 
 .hello {
   height: 60vh;

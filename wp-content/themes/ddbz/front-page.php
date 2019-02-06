@@ -25,10 +25,7 @@
     <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
   </div>
   <div class="phoneG">
-    <img class="hello" src="<?php echo get_template_directory_uri() ?>/images/phone_g.png">
-  </div>
-  <div class="jargonG">
-    <img class="hello" src="<?php echo get_template_directory_uri() ?>/images/jargon_g.png">
+    <a href="/contact" class="contact"><img class="hello" src="<?php echo get_template_directory_uri() ?>/images/phone_g.png"></a>
   </div>
   <section class="content">
     <h2>helloWorld</h2>
@@ -77,6 +74,9 @@
   </section>
   <div class="sidebar-right">
     <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+  </div>
+  <div class="jargonG">
+    <a href="/contact" class="contact"><img class="hello" src="<?php echo get_template_directory_uri() ?>/images/jargon_g.png"></a>
   </div>
   <footer id="colophon" class="site-footer">
     <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone_g.png">
