@@ -25,8 +25,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 :root {
   --gkblue: #0098FB;
-  --gkbluelt; #7fc5f7;
+  --gkltblue; #7fc5f7;
   --gksprout: #b8ff06;
+  --gray: #d3d3d38a;
   --border: 2px dashed #0098FB;
 }
 
@@ -60,12 +61,17 @@ h1, h2, h3, h4, h5 {
 a, a:link {
   text-decoration: none;
   color: var(--gkblue);
-  border-bottom: solid 3px var(--gksprout);
+  border-bottom: solid 3px var(--gray);
   transition: all 0.75s;
+}
+
+.menu a, .menu a:link {
+  border-bottom: solid 3px var(--gksprout);
 }
 
 a:hover {
   background: var(--gksprout);
+  border-bottom: solid 3px var(--gksprout);
   transition: all 0.75s;
   text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.5);
 }
@@ -118,7 +124,7 @@ header h1 {
 
 h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.2em;
   margin: 0;
 }
 
@@ -134,6 +140,11 @@ h4 {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
+}
+
+span.dash {
+  opacity: 0.4;
+  letter-spacing: normal;
 }
 
 .services {
@@ -412,6 +423,13 @@ select.wpcf7-select { /* Are there any select boxes? */
     padding: 0;
     margin: 0 auto;
     border: none;
+  }
+}
+
+@media only screen and (max-width: 35em) { /*-- .content height change? --*/
+
+  .services {
+    font-size: 8.5vw;
   }
 
 }

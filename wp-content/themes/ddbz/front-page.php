@@ -6,7 +6,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/warenhaus-typenhebel" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <title>Diez Design Buildz</title>
+  <title>Diez Design Build</title>
   <?php wp_head(); ?>
 </head>
 <body>
