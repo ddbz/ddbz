@@ -12,10 +12,11 @@ Keep it simple... a landing page + contact form. Build from there.
   * ~Mailto Contact Form~ 
   * ~Mobile Steez~
   * ~Make it a bit prettier~
+  * Postfix Config
+  * More Pictures! > Portfolio
   * ~Wordpress~ Proper
     * What's left?
-  * Postfix Config
-  * More Pictures!
+    * Meta Tags
   * Testimonials/Referrals/Outreach
   * Connecting the dots, socially
   * Publishing 
