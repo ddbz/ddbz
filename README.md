@@ -12,13 +12,17 @@ Keep it simple... a landing page + contact form. Build from there.
   * ~Mailto Contact Form~ 
   * ~Mobile Steez~
   * ~Make it a bit prettier~
-  * Postfix Config
-  * More Pictures! > Portfolio
+  * ~Email Config - Send/Receive/Server~
+  * More Pictures! 
+    * Services
+    * Favicon
+    * Portfolio
+  * Connecting the dots, socially
   * ~Wordpress~ Proper
     * What's left?
     * Meta Tags
-  * Testimonials/Referrals/Outreach
-  * Connecting the dots, socially
+    * Search Robot
   * Publishing 
+  * Testimonials/Referrals/Outreach
   * eCommerce
-  * Patreon
+  * Patreon? Or custom?
