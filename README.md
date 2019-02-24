@@ -13,6 +13,7 @@ Keep it simple... a landing page + contact form. Build from there.
   * ~Mobile Steez~
   * ~Make it a bit prettier~
   * ~Email Config - Send/Receive/Server~
+  * Front page slider - Plugin or Custom?
   * More Pictures! 
     * Services
     * Favicon

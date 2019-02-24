@@ -148,19 +148,81 @@ span.dash {
 }
 
 .services {
-  //position: relative;
+  position: relative;
+  width: 100;
+  //padding: .2em;
+  margin: 0 auto .5em auto;
+  border-top: var(--border);
+  border-bottom: var(--border);
+}
+
+#slider, .slide-content {
+  width: 100%;
+}
+
+.slide-content h3 {
+  font-style: unset;
+  //color: var(--gray);
+  opacity: 1;
+  padding-top: 5em;
+  margin: 0;
+  font-style: none;
   font-family: 'WarenhausTypenhebelStandard', monospace;
   font-size: 4vw;
   letter-spacing: 1vw;
   line-height: 1.1em;
   text-align: center;
-  width: 100;
-  padding: .2em;
-  margin: 0 auto .5em auto;
   text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
-  border-top: var(--border);
-  border-bottom: var(--border);
 }
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+}
+
+#arrow-left, #arrow-right {
+  position: relative;
+}
+
+#arrow-left:before, #arrow-right:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('images/chev_blue.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  top: 3em;
+  background-size: 2em;
+  z-index: 1;
+}
+
+#arrow-left:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#arrow-right:before {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  right: 0;
+}
+
+.slide-content p {
+  color: var(--gray);
+  padding: 0 3em;
+}
+
+.slide {
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.slide1 {background-image: url('images/brandIdentity.png');}
+.slide2 {background-image: url('images/contentStrategy.png');}
+.slide3 {background-image: url('images/webDesignDevelopment.png');}
 
 .quiet {
   opacity: 0.5;
@@ -190,7 +252,7 @@ footer p {
   grid-row: 2 / 3;
   align-self: end;
   justify-self: end;
-  z-index: 1;
+  z-index: 3;
 }
 
 .phoneG img, .jargonG img {
@@ -217,7 +279,7 @@ footer p {
   grid-row: 2 / 3;
   align-self: end;
   justify-self: start;
-  z-index: 1;
+  z-index: 3;
 }
 
 .mobilephone {

@@ -38,7 +38,31 @@
     <p>I design and build digital solutions that make real life better. I do:</p>
 
     <div class="services">
-    <span>Branding/Identity<br>Web Development<br>Content Strategy<br>Graphic Design<br>And more!</span>
+      <div id="arrow-left" class="arrow"></div>
+      <div id="arrow-right" class="arrow"></div>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <h3>Branding & Identity</h3>
+            <p>A nice collection of elegant and eloquent words around where the project starts</p>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <h3>Content Strategy</h3>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content">
+            <h3>Web Design & Development</h3>
+          </div>
+        </div>
+        <div class="slide slide4">
+          <div class="slide-content">
+            <h3>with a side of...</h3>
+          </div>
+        </div>
+      </div>
     </div>
     <h2 id="build">Build</h3>
     <h3>Portfolio coming soon...</h3>
@@ -84,5 +108,72 @@
     <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone_g.png">
     <p>© 2019</p>
   </footer>
+<script>
+  let sliderImages = document.querySelectorAll('.slide'),
+      arrowLeft = document.querySelector('#arrow-left'),
+      arrowRight = document.querySelector('#arrow-right'),
+      current = 0;
+
+  // Clear all images
+  function reset() {
+    for(let i = 0; i < sliderImages.length; i++) {
+      sliderImages[i].style.display = 'none';
+    }
+  }
+
+  // Initializes Slider
+  function startSlide(){
+    reset();
+    sliderImages[0].style.display = 'block';
+  }
+
+  function slideLeft(){
+    reset();
+    sliderImages[current - 1].style.display = 'block';
+    current--;
+  }
+
+  function slideRight(){
+    reset();
+    sliderImages[current + 1].style.display = 'block';
+    current++;
+  }
+  
+  arrowLeft.addEventListener('click', function() {
+    if(current === 0) {
+      current = sliderImages.length;
+    }
+    slideLeft();
+  });
+
+  arrowRight.addEventListener('click', function() {
+    if(current === sliderImages.length - 1) {
+      current = -1;
+    }
+    slideRight();
+  });
+
+  document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37: //left
+        e.preventDefault();
+        if(current === 0) {
+          current = sliderImages.length;
+        }
+        slideLeft();
+        break;
+      case 39: //right
+        e.preventDefault();
+        if(current === sliderImages.length - 1) {
+          current = -1;
+        }
+        slideRight();
+        break;
+    }
+  }
+
+  startSlide();
+  //console.log(arrowLeft);
+</script>
 </body>
 </html>
