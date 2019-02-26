@@ -105,7 +105,7 @@ header img {
   margin-top: 5px;
 }
 
-.dZ {
+.dZ { 
   display: none;
 }
 
@@ -142,64 +142,58 @@ h4 {
   text-transform: uppercase;
 }
 
-span.dash {
+/* Am I using this? */
+span.dash { 
   opacity: 0.4;
   letter-spacing: normal;
 }
 
 .services {
   position: relative;
-  width: 100;
-  //padding: .2em;
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
   margin: 0 auto .5em auto;
   border-top: var(--border);
   border-bottom: var(--border);
 }
 
-#slider, .slide-content {
-  width: 100%;
+/* -- SVG Arrows... Bit Dirty -- */
+
+#arrow-left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
 
-.slide-content h3 {
-  font-style: unset;
-  //color: var(--gray);
-  opacity: 1;
-  padding-top: 5em;
-  margin: 0;
-  font-style: none;
-  font-family: 'WarenhausTypenhebelStandard', monospace;
-  font-size: 4vw;
-  letter-spacing: 1vw;
-  line-height: 1.1em;
-  text-align: center;
-  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+#arrow-right {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
 }
 
 .arrow {
   cursor: pointer;
-  position: absolute;
-}
-
-#arrow-left, #arrow-right {
-  position: relative;
 }
 
 #arrow-left:before, #arrow-right:before {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-image: url('images/chev_blue.svg');
   background-repeat: no-repeat;
-  background-position: bottom;
-  top: 3em;
-  background-size: 2em;
+  //background-position: bottom;
+  //top: 200px;
+  background-size: 3rem;
   z-index: 1;
 }
 
 #arrow-left:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  top: 100px;
+  left: -3rem;
 }
 
 #arrow-right:before {
@@ -208,16 +202,48 @@ span.dash {
   right: 0;
 }
 
+/* -- Slider -- */
+
+#slider {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+#slider, .slide-content {
+  width: 100%;
+}
+
+.slide-content {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+
+.slide-content h3 {
+  grid-column: 1 / -1;
+  font-style: unset;
+  //color: var(--gray);
+  opacity: 1;
+  margin: 0;
+  font-style: none;
+  font-family: 'WarenhausTypenhebelStandard', monospace;
+  font-size: 4vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
 .slide-content p {
   color: var(--gray);
   padding: 0 3em;
 }
 
 .slide {
-  background-size: contain;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 50%;
 }
 
 .slide1 {background-image: url('images/brandIdentity.png');}
