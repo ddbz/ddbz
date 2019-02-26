@@ -209,19 +209,29 @@ span.dash {
   grid-row: 1 / -1;
 }
 
-#slider, .slide-content {
+/* -- Shouldn't need this
+#slider {
   width: 100%;
 }
+*/
 
-.slide-content {
+div.slide {
   display: grid;
   grid-template-columns: 2fr 5fr 2fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 150px);
 }
 
-
-.slide-content h3 {
+.slide-back {
   grid-column: 1 / -1;
+  grid-row: 1 / 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide h3 {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   font-style: unset;
   //color: var(--gray);
   opacity: 1;
@@ -234,21 +244,18 @@ span.dash {
   text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
-.slide-content p {
-  color: var(--gray);
-  padding: 0 3em;
+.slide h3:nth-of-type(2) {
+  grid-row: 2 / 3;
 }
 
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50%;
+.slide p {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
 }
 
-.slide1 {background-image: url('images/brandIdentity.png');}
-.slide2 {background-image: url('images/contentStrategy.png');}
-.slide3 {background-image: url('images/webDesignDevelopment.png');}
+.slide1 .slide-back {background-image: url('images/brandIdentity.png');}
+.slide2 .slide-back {background-image: url('images/contentStrategy.png');}
+.slide3 .slide-back {background-image: url('images/webDesignDevelopment.png');}
 
 .quiet {
   opacity: 0.5;

@@ -42,30 +42,27 @@
       <div id="arrow-right" class="arrow"></div>
       <div id="slider">
         <div class="slide slide1">
-          <div class="slide-content">
-            <h3>Branding & </h3>
-            <h3>Identity</h3>
-            <p>A nice collection of elegant and eloquent words around where the project starts</p>
-          </div>
+          <div class="slide-back"></div>
+          <h3>Branding & </h3>
+          <h3>Identity</h3>
+          <p>A nice collection of elegant and eloquent words around where the project starts</p>
         </div>
         <div class="slide slide2">
-          <div class="slide-content">
-            <h3>Content Strategy</h3>
-            <p>Content strategy refers to the planning, development, and management of content—written or in other media. The term has been particularly common in web development since the late 1990s.</p>
-          </div>
+          <div class="slide-back"></div>
+          <h3>Content Strategy</h3>
+          <p>Content strategy refers to the planning, development, and management of content—written or in other media. The term has been particularly common in web development since the late 1990s.</p>
         </div>
         <div class="slide slide3">
-          <div class="slide-content">
-            <h3>Web Design & </h3>
-            <h3>Development</h3>
-            <p>I developed an early appreciation for gravity and the wheels that allow us to ride it. That early momentum led to face smashing physics. I've crashed a lot. And for the most part, I've had a hell of a lot of fun doing it. Sometimes it's hard, sometimes it hurts, but it's always an opportunity to learn. It's a front row seat to watch how something comes apart. To see its pieces and the assorted ways for them to come together anew.</p>
-            <p>
-          </div>
+          <div class="slide-back"></div>
+          <h3>Web Design & </h3>
+          <h3>Development</h3>
+          <p>I developed an early appreciation for gravity and the wheels that allow us to ride it. That early momentum led to face smashing physics. I've crashed a lot. And for the most part, I've had a hell of a lot of fun doing it. Sometimes it's hard, sometimes it hurts, but it's always an opportunity to learn. It's a front row seat to watch how something comes apart. To see its pieces and the assorted ways for them to come together anew.</p>
+          <p>
         </div>
         <div class="slide slide4">
-          <div class="slide-content">
-            <h3>with a side of...</h3>
-          </div>
+          <div class="slide-back"></div>
+          <h3>with a side of</h3>
+          <p>Placeholder</p>
         </div>
       </div>
     </div>
@@ -129,18 +126,18 @@
   // Initializes Slider
   function startSlide(){
     reset();
-    sliderImages[0].style.display = 'block';
+    sliderImages[0].style.display = 'grid';
   }
 
   function slideLeft(){
     reset();
-    sliderImages[current - 1].style.display = 'block';
+    sliderImages[current - 1].style.display = 'grid';
     current--;
   }
 
   function slideRight(){
     reset();
-    sliderImages[current + 1].style.display = 'block';
+    sliderImages[current + 1].style.display = 'grid';
     current++;
   }
   
