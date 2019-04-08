@@ -148,14 +148,15 @@ span.dash {
   letter-spacing: normal;
 }
 
+/* -- All this necessary w/ the grid? -- */
 .services {
   position: relative;
   display: grid;
   width: 100%;
-  height: 600px;
+  //height: 600px;
   grid-template-columns: 2fr 5fr 2fr;
   grid-template-rows: repeat(4, 1fr);
-  margin: 0 auto .5em auto;
+  //margin: 0 auto .5em auto;
   border-top: var(--border);
   border-bottom: var(--border);
 }
@@ -215,6 +216,7 @@ span.dash {
 }
 */
 
+/* -- Those columns necessary? -- */
 div.slide {
   display: grid;
   grid-template-columns: 2fr 5fr 2fr;
@@ -232,9 +234,6 @@ div.slide {
 .slide h3 {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  font-style: unset;
-  //color: var(--gray);
-  opacity: 1;
   margin: 0;
   font-style: none;
   font-family: 'WarenhausTypenhebelStandard', monospace;
@@ -249,8 +248,9 @@ div.slide {
 }
 
 .slide p {
-  grid-column: 2 / 3;
+  grid-column: 1 / -1;
   grid-row: 3 / 5;
+  //font-family: 'WarenhausTypenhebelStandard', monospace;
 }
 
 .slide1 .slide-back {background-image: url('images/brandIdentity.png');}
@@ -332,7 +332,7 @@ footer p {
 }
 
 .content p, .content .tiles {
-  padding: 0 1.5em;
+  padding: 0 1.5rem;
 }
 
 .tiles {
@@ -454,10 +454,12 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 40vh;
   }
 
+  /*-- Don't think I need this
   .services {
     font-size: 6vw;
     line-height: .9em;
   }
+  --*/
 
 }
 
@@ -467,7 +469,7 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   header {
-    padding: 0 .5em;
+    padding: 0 .5rem;
   }
 
   .ddbz {
@@ -483,34 +485,35 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   .content p, .content .tiles {
-    padding: 0 .5em;
+    padding: 0 .5rem;
   }
 
   ul#menu-menu-1, li {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .sidebar-left, .sidebar-right, .phoneG, .jargonG {
     display: none;
   }
 
+  /*-- Don't need this
   .services {
     font-size: 7.5vw;
     font-weight: bold;
   }
+  --*/
 
   .mobilephone {
     display: block;
     position: absolute;
     bottom: .25em;
     right: .25em;
-    height: 13vh;
+    height: 15vh;
   }
 
   .footer p {
     top: 15%;
   }
-
 
   .content {
     grid-column: 1 / -1;
@@ -527,9 +530,11 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 2.2em;
   }
 
+  /*-- Nope...
   .services {
     font-size: 8.4vw;
   }
+  --*/
 
 }
 

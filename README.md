@@ -1,9 +1,9 @@
 # ddBz.io
 ### diezDesignBuildz
 
-Welcome to my humble digital abode. Rolling with _s and Wordpress. 
+Diez Design Build is my personal brand platform. It starts with a landing page to bring me some business, and we'll go from there.
 
-Keep it simple... a landing page + contact form. Build from there.
+Rolling with _s on Wordpress for starters. 
 
 **Next Steps:**
   * ~Analytics~
@@ -13,9 +13,9 @@ Keep it simple... a landing page + contact form. Build from there.
   * ~Mobile Steez~
   * ~Make it a bit prettier~
   * ~Email Config - Send/Receive/Server~
-  * Front page slider - Plugin or Custom?
+  * ~Custom front page~ slider 
   * More Pictures! 
-    * Services
+    * Services - Illustrations by hand
     * Favicon
     * Portfolio
   * Connecting the dots, socially
