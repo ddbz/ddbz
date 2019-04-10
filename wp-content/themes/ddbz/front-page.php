@@ -35,28 +35,32 @@
 
     <p>I design and build digital solutions that make real life better. I do:</p>
 
-    <div class="services">
-      <div id="arrow-left" class="arrow"></div>
-      <div id="arrow-right" class="arrow"></div>
-      <div id="slider">
-        <div class="slide slide1">
-          <div class="slide-back" role="img" aria-label="Branding & Identity"></div>
-          <p>We start at the heart of it. Clarity of purpose and vision is key to bring us into alignment. It's about asking the right questions and defining achievable goals. We establish a clear voice that captures the personality of your business and speaks to your ideal market. I run a digital whiteboard session to get this rolling. It's fun, interactive, and if you're local I can bring snacks.</p>
-        </div>
-        <div class="slide slide2">
-          <div class="slide-back" role="img" aria-label="Content Strategy"></div>
-          <p>With a sweet logo and a well articulated brand in hand, we're off to the races. A good design will help us churn out smart strategy to butter your business biscuit... apologies for the snack analogy but it's apt. Content is the king that rules this royal land. The internet is brimming with mythical beasts and wondrous feats. We do this right and we'll get you set up with a loyal steed and a rocket launcher.</p>
-        </div>
-        <div class="slide slide3">
-          <div class="slide-back" role="img" aria-label="Web Design & Developmnt"></div>
-          <p>Devices are my vices. Sure, they're great for play or saying 'hey', but used right they make incredible tools. The learning curve can be steep, but mastering their ways gives us a better grip on this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
-          <p>
-        </div>
-        <div class="slide slide4">
-          <div class="slide-back" role="img" aria-label="With a Side of Z"></div>
-          <p>Z is the boom I bring to all that I do. If it knocks us off our feet, let's get up and try again. Whether it's a cheeseburger or a website, I immerse myself in the craft. I love to learn. I find synergy in diversity of people and ideas. The only limit is imagination. But boots on the ground, it's clear we have much work to do. Bit of a shit show out there. But I'm not scared. We're all trying to solve the same problems and we're all riding the same rocket. So let's get to it. I'll bring my Z. You bring yours.</p>
-        </div>
+    <div id="slider">
+      <div class="slide slide1">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/brandIdentity.png" alt="Branding & Identity">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+        <p>We start at the heart of it. Clarity of purpose and vision is key to bring us into alignment. It's about asking the right questions and defining achievable goals. We establish a clear voice that captures the personality of your business and speaks to your ideal market. I run a digital whiteboard session to get this rolling. It's fun, interactive, and if you're local I can bring snacks.</p>
       </div>
+      <div class="slide slide2">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/contentStrategy.png" alt="Branding & Identity">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+        <p>With a sweet logo and a well articulated brand in hand, we're off to the races. A good design will help us churn out smart strategy to butter your business biscuit... apologies for the snack analogy but it's apt. Content is the king that rules this royal land. The internet is brimming with mythical beasts and wondrous feats. We do this right and we'll get you set up with a loyal steed and a rocket launcher.</p>
+      </div>
+      <div class="slide slide3">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/webDesignDevelopment.png" alt="Branding & Identity">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+        <p>Devices are my vices. Sure, they're great for play or saying 'hey', but used right they make incredible tools. The learning curve can be steep, but mastering their ways gives us a better grip on this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
+      </div>
+      <div class="slide slide4">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/brandIdentity.png" alt="Branding & Identity">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+        <p>Z is the boom I bring to all that I do. If it knocks us off our feet, let's get up and try again. Whether it's a cheeseburger or a website, I immerse myself in the craft. I love to learn. I find synergy in diversity of people and ideas. The only limit is imagination. But boots on the ground, it's clear we have much work to do. Bit of a shit show out there. But I'm not scared. We're all trying to solve the same problems and we're all riding the same rocket. So let's get to it. I'll bring my Z. You bring yours.</p>
+      </div>
+    </div>
     </div>
     <h2 id="build">Build</h3>
     <h3>Portfolio coming soon...</h3>
