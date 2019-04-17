@@ -46,19 +46,20 @@
         <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/contentStrategy.png" alt="Branding & Identity">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
-        <p>With a sweet logo and a well articulated brand in hand, we're off to the races. A good design will help us churn out smart strategy to butter your business biscuit... apologies for the snack analogy but it's apt. Content is the king that rules this royal land. The internet is brimming with mythical beasts and wondrous feats. We do this right and we'll get you set up with a loyal steed and a rocket launcher.</p>
+        <p>With a sweet logo and a well articulated brand in hand, we're off to the races. That core identity drives the design, charting our path to the prize. Content is king in this royal land. We owe it to the people. But beware, the internet is brimming with mythical beasts and wondrous feats. We do this right and we'll get you set up with a loyal steed and a rocket launcher.</p>
       </div>
       <div class="slide slide3">
         <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/webDesignDevelopment.png" alt="Branding & Identity">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
-        <p>Devices are my vices. Sure, they're great for play or saying 'hey', but used right they make incredible tools. The learning curve can be steep, but mastering their ways gives us a better grip on this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
+        <p>Devices are my vices. Sure, great for play, or saying 'hey', but used right, they make incredible tools. Learning curves can be steep, but mastering their ways means putting a saddle on the beast of this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
       </div>
       <div class="slide slide4">
         <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/brandIdentity.png" alt="Branding & Identity">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
-        <p>Z is the boom I bring to all that I do. If it knocks us off our feet, let's get up and try again. Whether it's a cheeseburger or a website, I immerse myself in the craft. I love to learn. I find synergy in diversity of people and ideas. The only limit is imagination. But boots on the ground, it's clear we have much work to do. Bit of a shit show out there. But I'm not scared. We're all trying to solve the same problems and we're all riding the same rocket. So let's get to it. I'll bring my Z. You bring yours.</p>
+        <p>Z is the boom I bring to all that I do. Let's get knocked off our feet. That's how we learn. Whether it's a cheeseburger or a website, I immerse myself in the craft. I seek synergy in diversity of people and ideas. To that diversity, of infinite possibility, I bring consistency. In the quality of the work I do, and the creativity and energy with which I do it. When you get down to it, we're all riding the same rocket. It's clear we've got work to do. So I'll bring my Z, and you bring yours.</p>
+        <p>Let's see how it flies.</p>
       </div>
     </div>
     </div>
@@ -78,8 +79,8 @@
     <p>It's my name. Don't worry, you won't wear it out, but say it right.</p> 
     <p>A bit unusual, I know. But that's me. I'm a pretty unusual guy. And I bring an unusually diverse set of skills to my work.</p>
     <p>I've been smashing things apart and putting them back together since I was a kid. That's how I learn. We had this sweet little workshop in the basement growing up, decked out with all kinds of dangerous tools. I went from fixing toaster ovens to building (and crashing) bikes. If my ass wasn't bouncing on a bike seat, it was often firmly planted in front of a screen. My big bro and I grew up geeks and gamers.</p> 
-    <p>I'm at home on the command line. I'm an adept wordsmith with a passion for pushing pixels. I've been a published photographer and a 3D modeler. In college I stretched my delicate wings with a year each in Spain and Denmark, grabbing an engineering degree along the way. I immediately landed what I considered a dream job working at a local bike startup. From there I moved to Vermont, grew a gnarly beard, and spent a few blissful years at an architectural design/build school, slinging huevos and hot meat sandwiches on the side. It was there that I developed a lens for the big picture, and came to see that I'm at my best when I bring all my seemingly disparate skills together.</p> 
-    <p>That we are at our collective best when we know how to come together, and collaborate. That gave me an idea. In 2010, my brain packed tight and percolating, I called up my best friend and asked him to build an education platform with me. It was an incredible ride. Tech has been my jam ever since.</p>
+    <p>I'm at home on the command line. I'm an adept wordsmith with a passion for pushing pixels. I've been a published photographer and a 3D modeler. In college I stretched my delicate wings with a year each in Spain and Denmark, grabbing an engineering degree along the way. I immediately landed what I considered a dream job working at a local bike startup. From there I moved to Vermont, grew a gnarly beard, and spent a few blissful years at an architectural design/build school, slinging huevos and hot meat sandwiches on the side. It was there that I developed a lens for the big picture, and came to see that I'm at my best when I bring all my seemingly disparate skills together. That we are at our collective best when we know how to come together, and collaborate.</p> 
+    <p>That gave me an idea. In 2010, my brain packed tight and percolating, I called up my best friend and asked him to build an education platform with me. It was an incredible ride. Tech has been my jam ever since.</p>
     <p>I'm good at working with tight constraints and I place high value on time. When that time is up I unplug. I'm a new dad in a new old home in Western Mass. I like to play outside. I'm usually in bed by nine.</p> 
     <p>If all that's cool with you, what's say we <a href="/contact">chat about lighting that fuze?</a></p>
     <h3>Stay tuned. Lots more to come.</h3>
@@ -92,7 +93,7 @@
   </div>
   <footer id="colophon" class="site-footer">
     <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone_g.png">
-    <p>i made this © 2019</p>
+    <p>i made every bit of this © 2019</p>
   </footer>
 <script>
   let sliderImages = document.querySelectorAll('.slide'),
