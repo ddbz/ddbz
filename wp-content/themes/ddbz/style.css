@@ -183,6 +183,7 @@ img.slide-back {
   cursor: pointer;
 }
 
+/* -- Shadow Arrow - Needs Tweaking
 #arrow-left:before, #arrow-right:before {
   content: "";
   position: absolute;
@@ -201,6 +202,7 @@ img.slide-back {
 #arrow-right:before {
   margin: 0 0 0 -6px;
 }
+*/
 
 #arrow-left:after, #arrow-right:after {
   content: "";
@@ -211,6 +213,14 @@ img.slide-back {
   background-repeat: no-repeat;
   background-size: 3rem;
   z-index: 4;
+}
+
+#arrow-left:after {
+  margin: 0 0 0 6px;
+}
+
+#arrow-right:after {
+  margin: 0 0 0 -6px;
 }
 
 #arrow-left:before, #arrow-left:after {

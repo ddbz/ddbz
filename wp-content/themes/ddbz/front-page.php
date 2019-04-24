@@ -52,14 +52,13 @@
         <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/webDesignDevelopment.png" alt="Branding & Identity">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
-        <p>Devices are my vices. Sure, great for play, or saying 'hey', but used right, they make incredible tools. Learning curves can be steep, but mastering their ways means putting a saddle on the beast of this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
+        <p>Devices are my vices. Sure, they're great for play or saying 'hey'. But looking beyond the glittery pixels, they are important tools with incredible potential to enhance us. To connect, amplify, and educate. Learning curves can be steep, but mastering their ways means putting a saddle on the beast of this digital world we live in. I get geeky with it so you don't have to. I'm a full stack designer/developer. If it's too much for just us, I'm happy to collab. I've got friends. When it comes to tech, I value simplicity. Whatever we build should look great and be easy for you and your customers to use.</p>
       </div>
       <div class="slide slide4">
         <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/brandIdentity.png" alt="Branding & Identity">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
-        <p>Z is the boom I bring to all that I do. Let's get knocked off our feet. That's how we learn. Whether it's a cheeseburger or a website, I immerse myself in the craft. I seek synergy in diversity of people and ideas. To that diversity, of infinite possibility, I bring consistency. In the quality of the work I do, and the creativity and energy with which I do it. When you get down to it, we're all riding the same rocket. It's clear we've got work to do. So I'll bring my Z, and you bring yours.</p>
-        <p>Let's see how it flies.</p>
+        <p>Z is the boom I bring to all that I do. I seek synergy in diversity of people and ideas. When I find it, I bring consistency. In the quality of the work I do, and the creativity and passion with which I do it. Whether it's a cheeseburger or a website, I immerse myself in the craft. Let's get knocked off our feet. There's so much to learn in getting back up. When you get down to it, we're all riding the same rocket. It's clear we've got work to do. So I'll bring my boom, and you bring yours. Let's see how it flies.</p>
       </div>
     </div>
     </div>
