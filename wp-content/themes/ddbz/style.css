@@ -164,9 +164,27 @@ img.slide-back {
   width: 100%;
 }
 
-.slide p {
+div.slideText {
   grid-column: 2 / -2;
   margin-block-start: 0;
+}
+
+.arrowWrap {
+  display: none;
+}
+
+.arrowWrap::before {
+  content: "";
+  width: 65px;
+  height: 50px;
+  float: left;
+}
+
+.arrowWrap::after {
+  content: "";
+  width: 65px;
+  height: 50px;
+  float: right;
 }
 
 /* -- SVG Arrows... Bit Dirty -- */
@@ -319,7 +337,7 @@ footer p {
   /*-- overflow: auto; --Changed due to iOs scroll issue --*/
 }
 
-.content p, .content .tiles {
+.content p, .content .tiles { 
   padding: 0 1.5rem;
 }
 
@@ -442,13 +460,6 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 40vh;
   }
 
-  /*-- Don't think I need this
-  .services {
-    font-size: 6vw;
-    line-height: .9em;
-  }
-  --*/
-
 }
 
 @media only screen and (max-width: 43em) { /*-- .content height change? --*/
@@ -473,7 +484,7 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   .content p, .content .tiles {
-    padding: 0 .5rem;
+    padding: 0 .75rem;
   }
 
   ul#menu-menu-1, li {
@@ -483,13 +494,6 @@ select.wpcf7-select { /* Are there any select boxes? */
   .sidebar-left, .sidebar-right, .phoneG, .jargonG {
     display: none;
   }
-
-  /*-- Don't need this
-  .services {
-    font-size: 7.5vw;
-    font-weight: bold;
-  }
-  --*/
 
   .mobilephone {
     display: block;
@@ -505,7 +509,6 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .content {
     grid-column: 1 / -1;
-    //width: 95vw;
     padding: 0;
     margin: 0 auto;
     border: none;
@@ -518,9 +521,25 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 2.2em;
   }
 
-  .slide p {
+  div.slideText {
     grid-column: 1 / -1;
   }
+
+  .arrowWrap {
+    display:block;
+  }
+
+  .content p {
+    text-align: justify;
+  }
+
+  /* -- Should apply to all text?
+  .slideText p {
+    text-align: justify;
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  */
 
 }
 
