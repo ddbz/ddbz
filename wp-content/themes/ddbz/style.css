@@ -166,24 +166,25 @@ img.slide-back {
 
 div.slideText {
   grid-column: 2 / -2;
-  margin-block-start: 0;
+  margin-block-start: -.5em;
 }
 
 .arrowWrap {
   display: none;
 }
 
-.arrowWrap::before {
+/* -- Should I use variables for box/arrows? Simplify media queries -- */
+.arrowWrap::before, .arrowWrap::after {
   content: "";
   width: 65px;
-  height: 50px;
+  height: 25px;
+}
+
+.arrowWrap::before {
   float: left;
 }
 
 .arrowWrap::after {
-  content: "";
-  width: 65px;
-  height: 50px;
   float: right;
 }
 
@@ -201,7 +202,7 @@ div.slideText {
   cursor: pointer;
 }
 
-/* -- Shadow Arrow - Needs Tweaking
+/* -- Shadow Arrow - Needs Tweaking - Bit sloppy all this - White?
 #arrow-left:before, #arrow-right:before {
   content: "";
   position: absolute;
@@ -234,11 +235,11 @@ div.slideText {
 }
 
 #arrow-left:after {
-  margin: 0 0 0 6px;
+  margin: -25px 0 0 6px;
 }
 
 #arrow-right:after {
-  margin: 0 0 0 -6px;
+  margin: -25px 0 0 -6px;
 }
 
 #arrow-left:before, #arrow-left:after {
@@ -436,11 +437,6 @@ select.wpcf7-select { /* Are there any select boxes? */
 
 /**---------------- Media query ----------------**/
 
-@media only screen and (min-width: 55em) {
-	.column-half{
-		width: 50%;
-	}
-}
 
 @media only screen and (max-width: 65em) {
   body {
@@ -459,7 +455,26 @@ select.wpcf7-select { /* Are there any select boxes? */
   .hello {
     height: 40vh;
   }
+}
 
+@media only screen and (min-width: 55em) {
+	.column-half{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 55em) {
+  div.slideText {
+    grid-column: 1 / -1;
+  }
+
+  .arrowWrap {
+    display: block;
+  }
+
+  .content p {
+    text-align: justify;
+  }
 }
 
 @media only screen and (max-width: 43em) { /*-- .content height change? --*/
@@ -485,6 +500,10 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .content p, .content .tiles {
     padding: 0 .75rem;
+  }
+
+  .content p {
+    text-align: none;
   }
 
   ul#menu-menu-1, li {
@@ -513,10 +532,17 @@ select.wpcf7-select { /* Are there any select boxes? */
     margin: 0 auto;
     border: none;
   }
+
+  div.slideText {
+    grid-column: 2 / -2;
+  }
+
+  .arrowWrap {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 35em) { /*-- .content height change? --*/
-
   h2 {
     font-size: 2.2em;
   }
@@ -529,6 +555,24 @@ select.wpcf7-select { /* Are there any select boxes? */
     display:block;
   }
 
+  .arrowWrap::before, .arrowWrap::after {
+    width: 50px;
+  }
+
+  #arrow-left:after, #arrow-right:after {
+    width: 30px;
+    height: 30px;
+    background-size: 1.8rem;
+  }
+
+  #arrow-left:after {
+    margin: -5px 0 0 5px;
+  } 
+
+  #arrow-right:after {
+    margin: -5px 0 0 10px;
+  } 
+
   .content p {
     text-align: justify;
   }
@@ -540,7 +584,6 @@ select.wpcf7-select { /* Are there any select boxes? */
     margin-right: .5em;
   }
   */
-
 }
 
 .wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 select {

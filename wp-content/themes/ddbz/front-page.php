@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="slide slide2">
-        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/contentStrategy.png" alt="Branding & Identity">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/contentStrategy.png" alt="Content Strategy">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
         <div class="slideText">
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="slide slide3">
-        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/webDesignDevelopment.png" alt="Branding & Identity">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/webDesignDevelopment.png" alt="Web Design & Development">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
         <div class="slideText">
@@ -64,12 +64,12 @@
         </div>
       </div>
       <div class="slide slide4">
-        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/brandIdentity.png" alt="Branding & Identity">
+        <img class="slide-back" src="<?php echo get_template_directory_uri() ?>/images/sideofZ.png" alt="with a side of Z">
         <div id="arrow-left" class="arrow"></div>
         <div id="arrow-right" class="arrow"></div>
         <div class="slideText">
           <div class="arrowWrap"></div>
-          <p>Z is the boom I bring to all that I do. I seek synergy in diversity of people and ideas. When I find it, I bring consistency. In the quality of the work I do, and the creativity and passion with which I do it. Whether it's a cheeseburger or a website, I immerse myself in the craft. I'm not afraid to get knocked off my feet. What better way to figure out which direction is up. And there's so much to learn in getting back up. When you get down to it, we're all riding the same rocket. It's clear we've got work to do. So I'll bring my boom, and you bring yours. Let's see how it flies.</p>
+          <p>Z is the boom I bring to all that I do. I seek synergy in diversity of people and ideas. When I find it, I bring consistency. In the quality of the work I do, and the creativity and passion with which I do it. Whether it's a cheeseburger or a website, I immerse myself in the craft. I like feeling the heat, hearing the sizzle. Maybe it'll knock us off our feet. Getting up is how we grow. Let's figure out which direction is up and go. When you get down to it, we're all riding the same rocket. It's clear we've got work to do. So I'll bring my boom, and you bring yours. Let's see how it flies.</p>
         </div>
       </div>
     </div>
@@ -108,9 +108,9 @@
   </footer>
 <script>
   let sliderImages = document.querySelectorAll('.slide'),
-      arrowLeft = document.querySelector('#arrow-left'),
-      arrowRight = document.querySelector('#arrow-right'),
-      current = 0;
+    arrowLeft = document.querySelector('#arrow-left'),
+    arrowRight = document.querySelector('#arrow-right'),
+    current = 0;
 
   // Clear all images
   function reset() {
@@ -171,7 +171,6 @@
   }
 
   startSlide();
-  //console.log(arrowLeft);
 </script>
 </body>
 </html>
