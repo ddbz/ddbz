@@ -38,6 +38,5 @@ get_header();
     <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
     </div>
 
-
 <?php
 get_footer();

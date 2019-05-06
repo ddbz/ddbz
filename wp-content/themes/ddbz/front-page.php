@@ -102,75 +102,8 @@
   <div class="jargonG">
     <a href="/contact" class="contact"><img class="hello" src="<?php echo get_template_directory_uri() ?>/images/jargon_g.png"></a>
   </div>
-  <footer id="colophon" class="site-footer">
-    <a href="/contact"><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone.png"></a><img class="mobilephone" src="<?php echo get_template_directory_uri() ?>/images/tinyPhone_g.png">
-    <p>i made every bit of this © 2019</p>
-  </footer>
-<script>
-  let sliderImages = document.querySelectorAll('.slide'),
-    arrowLeft = document.querySelector('#arrow-left'),
-    arrowRight = document.querySelector('#arrow-right'),
-    current = 0;
-
-  // Clear all images
-  function reset() {
-    for(let i = 0; i < sliderImages.length; i++) {
-      sliderImages[i].style.display = 'none';
-    }
-  }
-
-  // Initializes Slider
-  function startSlide(){
-    reset();
-    sliderImages[0].style.display = 'grid';
-  }
-
-  function slideLeft(){
-    reset();
-    sliderImages[current - 1].style.display = 'grid';
-    current--;
-  }
-
-  function slideRight(){
-    reset();
-    sliderImages[current + 1].style.display = 'grid';
-    current++;
-  }
-  
-  arrowLeft.addEventListener('click', function() {
-    if(current === 0) {
-      current = sliderImages.length;
-    }
-    slideLeft();
-  });
-
-  arrowRight.addEventListener('click', function() {
-    if(current === sliderImages.length - 1) {
-      current = -1;
-    }
-    slideRight();
-  });
-
-  document.onkeydown = function(e) {
-    switch (e.keyCode) {
-      case 37: //left
-        e.preventDefault();
-        if(current === 0) {
-          current = sliderImages.length;
-        }
-        slideLeft();
-        break;
-      case 39: //right
-        e.preventDefault();
-        if(current === sliderImages.length - 1) {
-          current = -1;
-        }
-        slideRight();
-        break;
-    }
-  }
-
-  startSlide();
-</script>
+  <?php
+  get_footer();
+  ?>
 </body>
 </html>
