@@ -664,6 +664,10 @@ input:-webkit-autofill {
     -webkit-text-fill-color: var(--gkblue) !important;
 }
 
+div.wpcf7-response-output {
+  margin: 1rem 0.5rem 1rem;
+}
+
 form p:nth-last-child(3) { /*-- Am I using this? --*/
   background: green;
   grid-column: 1 / -1;

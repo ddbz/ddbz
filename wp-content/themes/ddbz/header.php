@@ -18,7 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/warenhaus-typenhebel" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<?php wp_head(); ?>
 </head>
 

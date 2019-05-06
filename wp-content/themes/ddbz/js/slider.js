@@ -12,7 +12,6 @@ let sliderImages = document.querySelectorAll('.slide'),
 
 // Clear all images
 function reset() {
-  console.log('We getting to this part?');
   for(let i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = 'none';
   }
