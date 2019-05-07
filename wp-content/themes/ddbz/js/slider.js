@@ -6,8 +6,6 @@
  */
 
 let sliderImages = document.querySelectorAll('.slide'),
-  arrowLeft = document.querySelector('#arrow-left'),
-  arrowRight = document.querySelector('#arrow-right'),
   current = 0;
 
 // Clear all images
@@ -35,19 +33,21 @@ function slideRight(){
   current++;
 }
 
-arrowLeft.addEventListener('click', function() {
-  if(current === 0) {
-    current = sliderImages.length;
+document.addEventListener('click', function (event) {
+  if (event.target.matches('#arrow-left')) {
+    if(current === 0) {
+      current = sliderImages.length;
+    }
+    slideLeft();
   }
-  slideLeft();
-});
 
-arrowRight.addEventListener('click', function() {
-  if(current === sliderImages.length - 1) {
-    current = -1;
+  if (event.target.matches('#arrow-right')) {
+    if(current === sliderImages.length - 1) {
+      current = -1;
+    }
+    slideRight();
   }
-  slideRight();
-});
+}, false);
 
 document.onkeydown = function(e) {
   switch (e.keyCode) {
