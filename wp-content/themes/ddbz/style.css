@@ -148,7 +148,8 @@ span.dash {
   letter-spacing: normal;
 }
 
-/* -- Those columns necessary? -- */
+/* -- Slider -- */
+
 div.slide {
   position: relative;
   display: grid;
@@ -160,6 +161,7 @@ div.slide {
 }
 
 img.slide-back {
+  pointer-events: none;
   grid-column: 1 / -1;
   width: 100%;
 }

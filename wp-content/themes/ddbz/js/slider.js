@@ -1,12 +1,14 @@
 /**
  * File slider.js.
  *
- * Scripts for the slider. Click and keyboard navigation.
- * Am I doing this right?
+ * Scripts for the slider. Clicks, keyboard, and touch navigation.
  */
 
 let sliderImages = document.querySelectorAll('.slide'),
-  current = 0;
+  slider = document.querySelector('#slider'),
+  current = 0,
+  x0 = null;
+
 
 // Clear all images
 function reset() {
@@ -67,5 +69,23 @@ document.onkeydown = function(e) {
       break;
   }
 }
+
+// Gesture Support
+
+function handle(e) { 
+  x0 = e.clientX; 
+  console.log(x0);
+};
+
+function swipe(e) {
+  if(x0 || x0 === 0) {
+    let dx = e.clientX - x0, s = Math.sign(dx);
+    console.log(s);
+    x0 = null;
+  }
+};
+
+slider.addEventListener('mousedown', handle, true);
+slider.addEventListener('mouseup', swipe, true);
 
 startSlide();
