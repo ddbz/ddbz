@@ -72,8 +72,10 @@ document.onkeydown = function(e) {
 
 // Gesture Support
 
+function unify(e) { return e.changedTouches ? e.changedTouches[0] : e }; // Don't totally get this, but seems right
+
 function handle(e) { 
-  x0 = e.clientX; 
+  x0 = unify(e).clientX; 
   console.log(x0);
 };
 
