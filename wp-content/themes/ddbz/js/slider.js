@@ -99,6 +99,8 @@ function swipe(e) {
 };
 
 slider.addEventListener('mousedown', handle, true);
+slider.addEventListener('touchstart', handle, true);
 slider.addEventListener('mouseup', swipe, true);
+slider.addEventListener('touchend', swipe, true);
 
 startSlide();
