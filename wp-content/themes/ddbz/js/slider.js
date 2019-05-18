@@ -81,7 +81,7 @@ function handle(e) {
 
 function swipe(e) {
   if(x0 || x0 === 0) {
-    let dx = e.clientX - x0, s = Math.sign(dx);
+    let dx = unify(e).clientX - x0, s = Math.sign(dx);
     switch (s) {
       case 1: //left
         if(current === 0) {
