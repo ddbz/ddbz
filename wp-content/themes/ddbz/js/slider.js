@@ -80,7 +80,20 @@ function handle(e) {
 function swipe(e) {
   if(x0 || x0 === 0) {
     let dx = e.clientX - x0, s = Math.sign(dx);
-    console.log(s);
+    switch (s) {
+      case 1: //left
+        if(current === 0) {
+          current = sliderImages.length;
+        }
+        slideLeft();
+        break;
+      case -1: //right
+        if(current === sliderImages.length - 1) {
+          current = -1;
+        }
+        slideRight();
+        break;
+    }
     x0 = null;
   }
 };
