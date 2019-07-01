@@ -13,12 +13,15 @@ Rolling with _s on Wordpress for starters.
   * ~Mobile Steez~
   * ~Make it a bit prettier~
   * ~Email Config - Send/Receive/Server~
+  * ~Favicon~
+  * Publishing 
+    * Basic template  
   * Services Slider
     * ~Write~
     * ~Illustrate~
     * ~Code custom slider~
     * Touch Swipe
-  * ~Favicon~
+  * Bugs & Tweaks
   * Battle bots in forms
   * Caching
   * ~Wordpress~ Proper
@@ -26,7 +29,5 @@ Rolling with _s on Wordpress for starters.
     * Meta Tags
     * Search Robot
   * Refine animations
-  * Publishing 
   * Testimonials/Referrals/Outreach
   * eCommerce
-  * Patreon? Or custom?
