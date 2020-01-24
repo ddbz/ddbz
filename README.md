@@ -20,14 +20,13 @@ Rolling with _s on Wordpress for starters.
     * ~Write~
     * ~Illustrate~
     * ~Code custom slider~
-    * Touch Swipe
+    * Touch Swipe 
   * Bugs & Tweaks
   * Battle bots in forms
   * Caching
   * ~Wordpress~ Proper
     * What's left?
-    * Meta Tags
-    * Search Robot
+    * SEO
+    * Index
   * Refine animations
   * Testimonials/Referrals/Outreach
-  * eCommerce
