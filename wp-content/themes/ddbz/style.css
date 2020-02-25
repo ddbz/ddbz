@@ -29,6 +29,49 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   --gksprout: #b8ff06;
   --gray: #d3d3d38a;
   --border: 2px dashed #0098FB;
+  --blockfont:
+    "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  --smallshadow:
+    -2px -2px var(--gkblue),
+    -1px -1px var(--gkblue),
+    0px -1px var(--gkblue),
+    1px 0px var(--gkblue),
+    -1px 0px var(--gkblue),
+    -1px 1px var(--gkblue),
+    2px 2px var(--gkblue), 
+    2px -2px var(--gkblue),
+    -2px 2px var(--gkblue),
+    -3px 3px var(--gkblue),
+    -4px 4px var(--gkblue),
+    -5px 5px var(--gkblue),
+    -6px 6px var(--gkblue),
+    -7px 7px var(--gkblue),
+    -8px 8px var(--gkblue),
+    -9px 9px var(--gkblue),
+    -10px 10px var(--gkblue),
+    -11px 11px var(--gkblue),
+    -12px 12px var(--gkblue),
+    -13px 13px var(--gkblue),
+    -14px 14px var(--gkblue),
+    -15px 15px var(--gkblue);
+  --doubleshadow:
+    -2px -2px var(--gkblue),
+    -1px -1px var(--gkblue),
+    0px -1px var(--gkblue),
+    1px 0px var(--gkblue),
+    -1px 0px var(--gkblue),
+    -1px 1px var(--gkblue),
+    2px 2px var(--gkblue), 
+    2px -2px var(--gkblue),
+    -2px 2px var(--gkblue),
+    3px 3px var(--gkblue),
+    4px 4px var(--gkblue),
+    5px 5px var(--gkblue),
+    6px 6px var(--gkblue),
+    7px 7px var(--gkblue),
+    8px 8px var(--gkblue),
+    9px 9px var(--gkblue),
+    10px 10px var(--gkblue);
 }
 
 html, body {
@@ -51,6 +94,9 @@ body {
   grid-template-columns: 2fr 2em 5fr 2em 2fr;
   grid-template-rows: 50px 1fr 50px;
   overflow-x: hidden;
+}
+
+body.front-page, body.page {
 }
 
 h1, h2, h3, h4, h5 {
@@ -328,6 +374,49 @@ footer p {
   display: none;
 }
 
+/*-- Playing w/ Typography --*/
+
+h2.play-title {
+  display: block;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  color: white;
+  white-space: pre-line;
+  text-shadow: var(--doubleshadow);
+  font-family: var(--blockfont);
+  font-size: 10rem;
+  align-self: end;
+}
+
+div.play-block div.tyStage {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  align-self: end;
+  justify-self: end;
+}
+
+div.tyStage img {
+  height: 80vh;
+  margin-bottom: -1rem;
+  filter: invert(9%) sepia(86%) saturate(1008%) hue-rotate(179deg) brightness(100%) contrast(100%);
+}
+
+.playLeft {
+  text-align: left;
+  line-height: 8.5rem;
+}
+
+h2.playLeft span {
+  line-height: 13rem;
+}
+
+img.wp-post-image {
+  width: 100%;
+  height: auto;
+}
+
+/*-- End of Typography Play --*/
+
 .content {
   grid-column: 2 / -2;
   grid-row: 2 / 3;
@@ -338,6 +427,22 @@ footer p {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   /*-- overflow: auto; --Changed due to iOs scroll issue --*/
+}
+
+.proto-content {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  font-size: 1.2em;
+  //overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.play-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 25vh);
+  border-bottom: var(--border);
+  overflow: hidden;
 }
 
 .content p, .content .tiles { 

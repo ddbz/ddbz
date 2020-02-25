@@ -10,7 +10,7 @@
   <title>Diez Design Build</title>
   <?php wp_head(); ?>
 </head>
-<body>
+<body class="front-page">
   <header>
     <a href="/" class="logo">
     <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">

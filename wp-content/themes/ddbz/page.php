@@ -11,7 +11,6 @@
  *
  * @package ddbz
  */
-
 get_header();
 ?>
 

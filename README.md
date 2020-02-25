@@ -16,11 +16,14 @@ Rolling with _s on Wordpress for starters.
   * ~Favicon~
   * Publishing 
     * Basic template  
+    * Portfolio and blog content
   * Services Slider
     * ~Write~
     * ~Illustrate~
     * ~Code custom slider~
     * Touch Swipe 
+    * Simplify Images & Layout
+  * Refresh front page content - simplify
   * Bugs & Tweaks
   * Battle bots in forms
   * Caching
