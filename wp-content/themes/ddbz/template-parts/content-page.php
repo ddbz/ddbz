@@ -10,9 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="page-hero">
   <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-
 	<?php ddbz_post_thumbnail(); ?>
+  </div>
 
 	<div class="entry-content">
 		<?php

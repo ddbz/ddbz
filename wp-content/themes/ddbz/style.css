@@ -96,9 +96,6 @@ body {
   overflow-x: hidden;
 }
 
-body.front-page, body.page {
-}
-
 h1, h2, h3, h4, h5 {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.1);
@@ -374,7 +371,51 @@ footer p {
   display: none;
 }
 
-/*-- Playing w/ Typography --*/
+/*-- Page Style --*/
+
+.content, .content-area {
+  font-size: 1.2em; /* Why here? */
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  //padding: 0 1.5em 0 1.5em; /* Put on p or something... */
+  /*-- overflow: auto; --Changed due to iOs scroll issue --*/
+}
+
+section.page-contact, section.page-front {
+  font-size: 1.2em; 
+  grid-column: 2 / -2;
+  grid-row: 2 / 3;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*-- Merge with above --*/
+.border-LR { 
+  border-left: var(--border);
+  border-right: var(--border);
+}
+
+div.page-hero {
+  display: grid;
+  grid-template-columns: 2fr 2em 5fr 2em 2fr;
+  border-bottom: var(--border);
+}
+
+.page-hero .post-thumbnail {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.page-hero .entry-title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 1;
+  align-self: center;
+  font-size: 8rem; // Make this dynamic at some point
+}
+
+/*-- Playing w/ Typography  w/ Prototype --*/
+
 
 h2.play-title {
   display: block;
@@ -417,17 +458,6 @@ img.wp-post-image {
 
 /*-- End of Typography Play --*/
 
-.content {
-  grid-column: 2 / -2;
-  grid-row: 2 / 3;
-  font-size: 1.2em;
-  //padding: 0 1.5em 0 1.5em;
-  border-left: var(--border);
-  border-right: var(--border);
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  /*-- overflow: auto; --Changed due to iOs scroll issue --*/
-}
 
 .proto-content {
   grid-column: 1 / -1;
@@ -445,6 +475,7 @@ div.play-block {
   overflow: hidden;
 }
 
+/*-- Not getting applied right now --*/
 .content p, .content .tiles { 
   padding: 0 1.5rem;
 }
@@ -466,6 +497,14 @@ div.play-block {
 
 
 /**-- Contact Form 7 / Prebaked Responsive --**/
+
+.page-contact .page-hero h2.entry-title {
+    font-size: 4rem;
+}
+
+.page-contact div.page-hero {
+    border-bottom: none;
+}
 
 #responsive-form{
 	max-width:700px /*-- change this to get your desired form width --*/;

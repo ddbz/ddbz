@@ -24,12 +24,13 @@ Rolling with _s on Wordpress for starters.
     * Touch Swipe 
     * Simplify Images & Layout
   * Refresh front page content - simplify
-  * Bugs & Tweaks
+  * Caching - Especially font
+  * Index & Launch
+  * Testimonials/Referrals/Outreach
+  * Refactor / Bugs & Tweaks
   * Battle bots in forms
-  * Caching
   * ~Wordpress~ Proper
     * What's left?
     * SEO
     * Index
   * Refine animations
-  * Testimonials/Referrals/Outreach

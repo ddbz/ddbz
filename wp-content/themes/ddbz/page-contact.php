@@ -15,7 +15,10 @@ get_header();
 ?>
 
 
-    <section class="content">
+    <div class="sidebar-left">
+    <img class="hello phone" src="<?php echo get_template_directory_uri() ?>/images/phone.png">
+    </div>
+    <section class="border-LR page-contact">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -30,6 +33,9 @@ get_header();
 		endwhile; // End of the loop.
 		?>
     </section>
+    <div class="sidebar-right">
+    <img class="hello jargon" src="<?php echo get_template_directory_uri() ?>/images/jargon.png">
+    </div>
 
 <?php
 get_footer();

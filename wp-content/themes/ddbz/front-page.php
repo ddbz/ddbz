@@ -10,7 +10,7 @@
   <title>Diez Design Build</title>
   <?php wp_head(); ?>
 </head>
-<body class="front-page">
+<body>
   <header>
     <a href="/" class="logo">
     <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
@@ -28,7 +28,7 @@
   <div class="phoneG">
     <a href="/contact" class="contact"><img class="hello" src="<?php echo get_template_directory_uri() ?>/images/phone_g.png"></a>
   </div>
-  <section class="content">
+  <section class="page-front border-LR">
     <h2>helloWorld</h2>
     <h3>It's me... Jordan</h3>
     <p>I love solving problems. Putting the pieces together. When they come together just right... <span class="sprout">**BOOM!**</span> ...They become more than the sum of the parts.</p> 
