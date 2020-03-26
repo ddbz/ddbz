@@ -23,8 +23,8 @@
 			<div class="entry-meta">
 				<?php
 				ddbz_posted_on();
-				ddbz_posted_by();
 				?>
+				<!-- ^ ddbz_posted_by() - Pretty it up later -->
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

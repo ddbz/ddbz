@@ -134,10 +134,18 @@ header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: var(--border);
   display: grid;
+}
+
+.site-header {
   grid-template-columns: 1fr;
   grid-auto-flow: column; /* This for the menu? */
   padding: 0 1em;
 }
+
+.entry-header {
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
 
 header, footer {
   grid-column: 1 / -1;
@@ -149,6 +157,10 @@ header img {
 }
 
 .dZ { 
+  display: none;
+}
+
+time.updated {
   display: none;
 }
 
@@ -248,24 +260,24 @@ div.slideText {
 }
 
 /* -- Shadow Arrow - Needs Tweaking - Bit sloppy all this - White?
-#arrow-left:before, #arrow-right:before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-image: url('images/chev_green.svg');
-  background-repeat: no-repeat;
-  background-size: 3rem;
-  z-index: 3;
-}
+  #arrow-left:before, #arrow-right:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('images/chev_green.svg');
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    z-index: 3;
+  }
 
-#arrow-left:before {
-  margin: 0 0 0 6px;
-}
+  #arrow-left:before {
+    margin: 0 0 0 6px;
+  }
 
-#arrow-right:before {
-  margin: 0 0 0 -6px;
-}
+  #arrow-right:before {
+    margin: 0 0 0 -6px;
+  }
 */
 
 #arrow-left:after, #arrow-right:after {
@@ -399,6 +411,18 @@ div.page-hero {
   display: grid;
   grid-template-columns: 2fr 2em 5fr 2em 2fr;
   border-bottom: var(--border);
+}
+
+.entry-header div.entry-meta {
+  grid-column: 1 / 2;
+  justify-self: end;
+}
+
+.entry-header h1.entry-title {
+  grid-column: 2 / 3;
+  align-self: center;
+  font-size: 9rem; /* Make this dynamic at some point */
+  line-height: 6rem;
 }
 
 .page-hero .post-thumbnail {

@@ -11,7 +11,7 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <header>
+  <header id="masthead" class="site-header">
     <a href="/" class="logo">
     <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
     <img class="dZ" src="<?php echo get_template_directory_uri() ?>/images/dZ.png"></a>
