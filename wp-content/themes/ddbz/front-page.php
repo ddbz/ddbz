@@ -32,7 +32,7 @@
     <h2>helloWorld</h2>
     <h3>It's me... Jordan</h3>
     <p>I love solving problems. Putting the pieces together. When they come together just right... <span class="sprout">**BOOM!**</span> ...They become more than the sum of the parts.</p> 
-    <p>Do you know the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? Let me help you make better use of it. Do you have something you'd like to launch? An idea? A business? <a href="#">Just pick up the phone.</a></p> 
+    <p>Do you know the device that's currently connecting you to me is over a million times more powerful than the ones that sent man to the moon? Let me help you make better use of it. Do you have something you'd like to launch? An idea? A business? <a href="/contact">Just pick up the phone.</a></p> 
 
     <p>I design and build digital solutions that make real life better. I do:</p>
 

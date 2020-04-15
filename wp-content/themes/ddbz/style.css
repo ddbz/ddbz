@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------*/
 
 :root {
+  --postGrid: 1fr minmax(600px, 800px) 1fr;
   --gkblue: #0098FB;
   --gkltblue; #7fc5f7;
   --gksprout: #b8ff06;
@@ -160,8 +161,17 @@ section.page-contact article {
   grid-column: 2 / 3;
 }
 
+.entry-content p {
+  padding: 0 .75rem;
+}
+
 header, footer {
   grid-column: 1 / -1;
+}
+
+/*-- Hide till it's pretty and defined categories --*/
+span.cat-links {
+  display: none;
 }
 
 header img {
@@ -208,6 +218,12 @@ h4 {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
+}
+
+hr {
+  border-top: none;
+  border-bottom: var(--border);
+  width: 33%;
 }
 
 /* Am I using this? */
@@ -414,8 +430,6 @@ section.page-contact, section.page-front {
   -webkit-overflow-scrolling: touch;
 }
 
-
-
 /*-- Merge with above --*/
 .border-LR { 
   border-left: var(--border);
@@ -439,6 +453,7 @@ div.page-hero {
 .entry-header h1.entry-title {
   grid-column: 2 / 3;
   align-self: center;
+  text-align: center;
   font-size: 9rem; /* Make this dynamic at some point */
   line-height: 6rem;
 }
@@ -454,6 +469,62 @@ div.page-hero {
   z-index: 1;
   align-self: center;
   font-size: 8rem; // Make this dynamic at some point
+}
+
+/*-- Comments --*/
+
+#reply-title {
+  margin-top: 1.3rem;
+  font-size: 2.4rem;
+}
+
+#comments form {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(300px, 400px)) 1fr;
+}
+
+.comment-notes {
+  display: none;
+}
+
+textarea#comment {
+  margin-top: .5em;
+  width: 100%;
+  border: var(--border);
+}
+
+#commentform p {
+  padding: .5em;
+}
+
+span.required {
+  display: none;
+}
+
+#commentform input {
+  border: var(--border);
+  border-width: 0 0 2px 0;
+  width: 100%;
+}
+
+p.comment-form-comment {
+  grid-column: 2 / 4;
+}
+
+p.comment-form-author {
+  grid-column: 2 / 3;
+}
+
+p.comment-form-url {
+  grid-column: 2 / 3;
+}
+
+p.comment-form-cookies-consent {
+  grid-column: 3 / 4;
+}
+
+#comments p.form-submit {
+  grid-column: 3 / 4;
 }
 
 /*-- Playing w/ Typography  w/ Prototype --*/
@@ -560,8 +631,8 @@ select,
 textarea {
 	background: transparent;
 	//background-image: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	//-webkit-appearance: none;
+	//-moz-appearance: none;
 	border-radius: 0;
 	color: inherit;
 	font-family: inherit; /* 1 */
@@ -642,6 +713,11 @@ select.wpcf7-select { /* Are there any select boxes? */
   .hello {
     height: 40vh;
   }
+
+  .entry-header h1.entry-title {
+    font-size: 7rem;
+  }
+
 }
 
 @media only screen and (min-width: 55em) {
@@ -693,6 +769,11 @@ select.wpcf7-select { /* Are there any select boxes? */
     text-align: none;
   }
 
+  .entry-content p {
+    text-align: justify;
+  }
+
+
   ul#menu-menu-1, li {
     font-size: 1.2rem;
   }
@@ -718,6 +799,15 @@ select.wpcf7-select { /* Are there any select boxes? */
     padding: 0;
     margin: 0 auto;
     border: none;
+  }
+
+  .entry-header h1.entry-title {
+    grid-column: 1 / -1;
+  }
+
+  .entry-header div.entry-meta {
+    grid-column: 1 / -1;
+    grid-row: unset;
   }
 
   div.slideText {
@@ -855,9 +945,11 @@ div.wpcf7-response-output {
   margin: 1rem 0.5rem 1rem;
 }
 
-form p:nth-last-child(3) { /*-- Am I using this? --*/
+/*-- Am I using this? 
+form p:nth-last-child(3) { 
   background: green;
   grid-column: 1 / -1;
 } 
+--*/
 
 /**---------------- Contact End ----------------**/
