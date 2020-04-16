@@ -150,7 +150,7 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 
  /**
- * Cut this from inc/template-tags.php
+ * Copied this from inc/template-tags.php
  */
  if ( ! function_exists( 'ddbz_posted_on' ) ) :
    /**
@@ -222,3 +222,20 @@ function wpb_add_googleanalytics() { ?>
  * ddBz Custom Tweaks & Additions
  */
 add_filter( 'show_admin_bar' , '__return_false' );
+
+function ddbz_custom_cookie_checkox($arg) {
+  $commenter = wp_get_current_commenter();
+  $req = get_option( 'require_name_email' );
+  $aria_req = ( $req ? " aria-required='true'" : '' );
+  $consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+  $arg['cookies'] = '<p class="comment-form-cookies-consent"><label for="wp-comment-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' . '<span></span>' . __( 'Remember me next time I visit or comment.' ) . '</label></p>';
+  return $arg;
+}
+
+/**
+ * Old Label Element
+ *
+  $arg['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' . '<label for="wp-comment-cookies-consent">' . __( 'Remember me next time I visit or comment.' ) . '</label></p>';
+*/
+
+add_filter( 'comment_form_default_fields', 'ddbz_custom_cookie_checkox');
