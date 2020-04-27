@@ -223,12 +223,22 @@ function wpb_add_googleanalytics() { ?>
  */
 add_filter( 'show_admin_bar' , '__return_false' );
 
-function ddbz_custom_cookie_checkox($arg) {
+/**
+ * Comment Form Tweaks - Custom checkbox, Re-Order
+ */
+function ddbz_custom_comments_form($arg) {
+  /** Makes cookies field available **/
   $commenter = wp_get_current_commenter();
   $req = get_option( 'require_name_email' );
   $aria_req = ( $req ? " aria-required='true'" : '' );
   $consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
-  $arg['cookies'] = '<p class="comment-form-cookies-consent"><label for="wp-comment-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' . '<span></span>' . __( 'Remember me next time I visit or comment.' ) . '</label></p>';
+  /** End - Makes cookies field available **/
+  $arg['url'] = '';
+  $comment_field = $arg['comment'];
+  unset( $arg['cookies'] );
+  unset( $arg['comment'] );
+  $arg['comment'] = $comment_field;
+  $arg['cookies'] = '<p class="comment-form-cookies-consent"><label for="wp-comment-cookies-consent" tabindex="0"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' . '<span></span>' . __( 'Remember me next time I visit or comment.' ) . '</label></p>';
   return $arg;
 }
 
@@ -238,4 +248,4 @@ function ddbz_custom_cookie_checkox($arg) {
   $arg['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' . '<label for="wp-comment-cookies-consent">' . __( 'Remember me next time I visit or comment.' ) . '</label></p>';
 */
 
-add_filter( 'comment_form_default_fields', 'ddbz_custom_cookie_checkox');
+add_filter( 'comment_form_fields', 'ddbz_custom_comments_form');

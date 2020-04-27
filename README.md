@@ -28,9 +28,6 @@ Rolling with _s on Wordpress for starters.
   * Index & Launch
   * Testimonials/Referrals/Outreach
   * Refactor / Bugs & Tweaks
-  * Battle bots in forms
-  * ~Wordpress~ Proper
-    * What's left?
-    * SEO
-    * Index
-  * Refine animations
+  * Comments Upgrade
+  * Battle bots 
+  * Animations
