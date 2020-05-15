@@ -120,10 +120,14 @@ a:hover {
   text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.5);
 }
 
-a.logo, a.logo:hover, a.contact {
+a.logo, a.logo:hover, a.contact, .posted-on a {
   text-decoration: none;
   border: none;
   background: none;
+}
+
+.posted-on a {
+  opacity: 0.5;
 }
 
 a.contact:hover img {
@@ -473,6 +477,10 @@ div.page-hero {
 
 /*-- Comments --*/
 
+article.comment-body > * {
+    padding: 0 .75rem;
+}
+
 #reply-title {
   margin-top: 1.3rem;
   font-size: 2.4rem;
@@ -498,7 +506,6 @@ textarea#comment {
 
 #commentform p {
   padding: 0 .5em;
-  //margin: 1rem;
 }
 
 span.required {
@@ -837,8 +844,15 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .entry-header h1.entry-title {
     font-size: 7rem;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
   }
 
+  .entry-header div.entry-meta {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin: 0.5rem;
+  }
 }
 
 @media only screen and (min-width: 55em) {
@@ -866,8 +880,13 @@ select.wpcf7-select { /* Are there any select boxes? */
     grid-template-rows: 35px 1fr 35px;
   }
 
-  header {
-    padding: 0 .5rem;
+  /*-- Better place for this --*/
+  .entry-header {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article {
+    grid-template-columns: .25rem 1fr .25rem;
   }
 
   .ddbz {
@@ -896,7 +915,8 @@ select.wpcf7-select { /* Are there any select boxes? */
 
 
   ul#menu-menu-1, li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: unset;
   }
 
   .sidebar-left, .sidebar-right, .phoneG, .jargonG {
@@ -911,6 +931,15 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 15vh;
   }
 
+  img.mobilephone::before {
+    background: white;
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+  }
+
   .footer p {
     top: 15%;
   }
@@ -922,13 +951,20 @@ select.wpcf7-select { /* Are there any select boxes? */
     border: none;
   }
 
-  .entry-header h1.entry-title {
-    grid-column: 1 / -1;
+  #comments form {
+    grid-template-columns: .25rem 1fr 1fr .25rem;
   }
 
-  .entry-header div.entry-meta {
-    grid-column: 1 / -1;
-    grid-row: unset;
+  #commentform p {
+    margin: 0.5rem 0;
+  }
+
+  h3#reply-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .entry-header h1.entry-title {
+    margin: 3rem auto;
   }
 
   div.slideText {
@@ -973,6 +1009,28 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   .content p {
     text-align: justify;
+  }
+
+  p.comment-form-author {
+    grid-column: 2 / -2;
+  }
+
+  p.comment-form-email {
+    grid-column: 2 / -2;
+  }
+
+  p.comment-form-cookies-consent {
+    grid-column: 2 / -2;
+  }
+  
+  #comments p.form-submit {
+    grid-column: 2 / -2;
+    text-align: center;
+  }
+
+  .entry-header h1.entry-title {
+    font-size: 4rem;
+    line-height: 3rem;
   }
 
   /* -- Should apply to all text?

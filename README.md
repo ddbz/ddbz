@@ -23,7 +23,7 @@ Rolling with _s on Wordpress for starters.
     * ~Code custom slider~
     * Touch Swipe 
     * Simplify Images & Layout
-  * Refresh front page content - simplify
+  * Refresh front page content - clear & simple
   * Caching - Especially font
   * Index & Launch
   * Testimonials/Referrals/Outreach
