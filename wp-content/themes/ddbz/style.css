@@ -931,6 +931,7 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 15vh;
   }
 
+  /*-- Not working yet
   img.mobilephone::before {
     background: white;
     height: 40px;
@@ -939,6 +940,7 @@ select.wpcf7-select { /* Are there any select boxes? */
     display: block;
     position: absolute;
   }
+  --*/
 
   .footer p {
     top: 15%;
