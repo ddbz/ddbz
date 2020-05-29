@@ -78,6 +78,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html, body {
   height: 100%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -423,7 +424,8 @@ footer p {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   //padding: 0 1.5em 0 1.5em; /* Put on p or something... */
-  /*-- overflow: auto; --Changed due to iOs scroll issue --*/
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 section.page-contact, section.page-front {
