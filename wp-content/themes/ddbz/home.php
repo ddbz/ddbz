@@ -25,6 +25,7 @@ get_header();
 				?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h3 class="byline">trials and tribulations of the daddyBiz</h3>
 				</header>
 				<?php
 			endif;

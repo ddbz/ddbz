@@ -139,7 +139,7 @@ a.contact:hover img {
 header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: var(--border);
-  display: grid;
+  display: grid; /* This line?... */
 }
 
 .site-header {
@@ -183,6 +183,11 @@ span.cat-links {
   display: none;
 }
 
+/*-- Hiding for now. Don't think I need them --*/
+.edit-link {
+  display: none;
+}
+
 header img {
   height: 45px;
   margin-top: 5px;
@@ -192,7 +197,7 @@ header img {
   display: none;
 }
 
-time.updated {
+time.updated { 
   display: none;
 }
 
@@ -211,6 +216,7 @@ time.updated {
 header h1 {
   font-style: smallcaps;
   align-self: center;
+  text-align: center;
 }
 
 h2 {
@@ -268,6 +274,71 @@ footer p {
   margin: 0;
 }
 
+/*-- papaRico Start --*/
+
+.blog h1.page-title {
+  font-size: 3.3em;
+  line-height: 0;
+  margin-top: 1.5em;
+}
+
+.blog header h3 {
+  margin-bottom: 3em;
+}
+
+.blog article {
+  grid-template-columns: 1fr 100px minmax(600px, 800px) 1fr;
+  margin: 2em auto;
+}
+
+.blog .entry-footer {
+  grid-column: 2 / -2;
+  text-align: right;
+  border: none;
+  opacity: .5;
+}
+
+.blog .entry-header {
+  grid-column: 2 / -2;
+  grid-template-columns: 100px 1fr;
+  border: none;
+}
+
+.blog h2.entry-title {
+  text-align: left;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.blog div.entry-meta {
+  align-self: start !important;
+}
+
+.blog .entry-content p {
+  padding: 0;
+}
+
+/*-- Hiding till it's prettier --*/
+.blog span.comments-link {
+  display: none;
+}
+
+.blog h2.entry-title a, .blog h2.entry-title a:link {
+  border: none;
+}
+
+.blog .entry-content p {
+  margin: 0.1em;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.blog .entry-content {
+  grid-column: 3 / 4;
+}
+
+/*-- papaRico End --*/
+
 /*-- Contact Start --*/
 
 .sidebar-left {
@@ -307,9 +378,9 @@ footer p {
 .content-area {  /* Merge w/ .content and proto-content? */
   font-size: 1.2em; /* Why here? */
   grid-column: 1 / -1;
-  grid-row: 2 / 3;
+  //grid-row: 2 / 3;
   //padding: 0 1.5em 0 1.5em; /* Put on p or something... */
-  overflow-y: scroll;
+  //overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
