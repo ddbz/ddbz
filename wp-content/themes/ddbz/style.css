@@ -139,12 +139,12 @@ a.contact:hover img {
 header {
   font-family: 'WarenhausTypenhebelStandard', monospace;
   border-bottom: var(--border);
-  display: grid; /* This line?... */
 }
 
-.site-header {
+header#masthead {
+  display: grid;
   grid-template-columns: 1fr;
-  grid-auto-flow: column; /* This for the menu? */
+  grid-auto-flow: column; 
   padding: 0 1em;
 }
 
@@ -152,7 +152,7 @@ section.content {
   grid-column: 1 / -1;
 }
 
-article {
+article { /* More specific here too? */
   display: grid;
   grid-template-columns: 1fr minmax(600px, 800px) 1fr;
 }
@@ -162,7 +162,11 @@ section.page-contact article {
   display: unset;
 }
 
-.entry-header {
+header.entry-header {
+  display: grid;
+}
+
+body.single .entry-header { /* more specific */
   grid-template-columns: 1fr minmax(600px, 800px) 1fr;
 }
 
@@ -170,7 +174,7 @@ section.page-contact article {
   grid-column: 2 / 3;
 }
 
-.entry-content p {
+.entry-content p { /* Only singles & pages */
   padding: 0 .75rem;
 }
 
@@ -282,8 +286,10 @@ footer p {
   margin-top: 1.5em;
 }
 
+
 .blog header h3 {
   margin-bottom: 3em;
+  font-weight: unset;
 }
 
 .blog article {
@@ -301,21 +307,32 @@ footer p {
 .blog .entry-header {
   grid-column: 2 / -2;
   grid-template-columns: 100px 1fr;
+  grid-auto-flow: column;
   border: none;
 }
 
 .blog h2.entry-title {
+  grid-column: 2 / 3;
   text-align: left;
   font-size: 2.5em;
   line-height: 1em;
 }
 
 .blog div.entry-meta {
-  align-self: start !important;
+  grid-column: 1 / 2;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.blog .entry-content {
+  grid-column: 3 / 4;
 }
 
 .blog .entry-content p {
   padding: 0;
+  margin: 0.1em;
+  font-style: italic;
+  opacity: 0.6;
 }
 
 /*-- Hiding till it's prettier --*/
@@ -325,16 +342,6 @@ footer p {
 
 .blog h2.entry-title a, .blog h2.entry-title a:link {
   border: none;
-}
-
-.blog .entry-content p {
-  margin: 0.1em;
-  font-style: italic;
-  opacity: 0.6;
-}
-
-.blog .entry-content {
-  grid-column: 3 / 4;
 }
 
 /*-- papaRico End --*/
@@ -405,7 +412,7 @@ div.page-hero {
   border-bottom: var(--border);
 }
 
-.entry-header div.entry-meta {
+body.single .entry-header div.entry-meta {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   align-self: end;
@@ -417,8 +424,9 @@ div.page-hero {
   grid-column: 2 / 3;
   align-self: center;
   text-align: center;
-  font-size: 9rem; /* Make this dynamic at some point */
+  font-size: 7.5rem; /* Make this dynamic at some point */
   line-height: 6rem;
+  letter-spacing: -.025rem;
 }
 
 .page-hero .post-thumbnail {
@@ -807,20 +815,25 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   .entry-header h1.entry-title {
-    font-size: 7rem;
+    font-size: 6rem;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
 
-  .entry-header div.entry-meta {
+  body.single .entry-header div.entry-meta {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     margin: 0.5rem;
   }
+
+  .blog article {
+    grid-template-columns: 1rem 100px 1fr 1rem;
+  }
 }
 
 @media only screen and (min-width: 55em) {
-	.column-half{
+
+	.column-half {
 		width: 50%;
 	}
 }
@@ -845,8 +858,12 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   /*-- Better place for this --*/
-  .entry-header {
+  body.single .entry-header {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .entry-header h1.entry-title {
+    font-size: 5rem;
   }
 
   article {
@@ -861,8 +878,19 @@ select.wpcf7-select { /* Are there any select boxes? */
     display: block;
   }
 
+  .menu-menu-1-container span {
+    font-size: 1.7em;
+    line-height: unset;
+  }
+
   header img {
     height: 25px;
+  }
+
+  /* Not loving this, but it works for now */
+  .blog .entry-content {
+    grid-column: 2 / -2;
+    padding: 0 1rem; 
   }
 
   section.page-front p, section.page-front .tiles {
@@ -895,6 +923,10 @@ select.wpcf7-select { /* Are there any select boxes? */
     height: 15vh;
   }
 
+  .page-id-50 .mobilephone {
+    display: none;
+  }
+  
   /*-- Not working yet
   img.mobilephone::before {
     background: white;
