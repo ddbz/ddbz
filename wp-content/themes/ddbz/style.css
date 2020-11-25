@@ -23,6 +23,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 >>> DDBZ Simple Styles - _s Recommended Style/Structure Follows
 ----------------------------------------------------------------*/
 
+@font-face {
+  font-family: 'WarenhausTypenhebelStandard';
+  src: url('fonts/Warenhaus-Standard.otf') format('opentype'), url('fonts/Warenhaus-Standard.ttf') format('truetype');
+}
+
 :root {
   --postGrid: 1fr minmax(600px, 800px) 1fr;
   --gkblue: #0098FB;
