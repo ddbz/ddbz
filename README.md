@@ -13,10 +13,11 @@ Rolling with _s on Wordpress for starters.
   * ~Make it a bit prettier~
   * ~Email Config - Send/Receive/Server~
   * ~Favicon~
+  * ~Cache font - issues w/ fontlibrary~
   * Scrap the old, reboot front page
   * Publishing 
     * ~Basic template~
-    * Portfolio and blog content
+    * Blog content
+    * Portfolio
   * Index & Launch
-  * Cache font - issues w/ fontlibrary
   * Comments Upgrade
