@@ -220,8 +220,10 @@ function wpb_add_googleanalytics() { ?>
 
 /**
  * ddBz Custom Tweaks & Additions
+ * remove_filter - trying to fix the ellipsis issue in the content
  */
 add_filter( 'show_admin_bar' , '__return_false' );
+remove_filter( 'the_content', 'wptexturize' );
 
 /**
  * Comment Form Tweaks - Custom checkbox, Re-Order

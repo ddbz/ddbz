@@ -118,9 +118,10 @@ h1, h2, h3, h4, h5 {
 }
 
 a, a:link {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--gksprout);
+  text-decoration-thickness: 25%;
   color: var(--gkblue);
-  border-bottom: solid 3px var(--gray);
   transition: all 0.75s;
 }
 
@@ -131,7 +132,7 @@ a, a:link {
 a:hover {
   background: var(--gksprout);
   border-bottom: solid 3px var(--gksprout);
-  transition: all 0.75s;
+  transition: all 0.5s;
   text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.5);
 }
 
@@ -215,7 +216,13 @@ header img {
   display: none;
 }
 
+/*-- Bit wonky... trying something else - leaving here in case the attribute selector gets effed
 time.updated { 
+  display: none;
+}
+*/
+
+[class="updated"] {
   display: none;
 }
 
@@ -294,14 +301,32 @@ footer p {
 
 /*-- papaRico Start --*/
 
+
 .blog h1.page-title {
-  font-size: 3.3em;
+  font-size: 5em;
   line-height: 0;
-  margin-top: 1.5em;
+  margin-top: 1.3em;
+}
+
+/* Bit messy with the hackety byline for Lifecycles */
+
+header.subtitle {
+  h1.entry-title {
+  line-height: 0;
+  margin: 1.3em auto .5em auto;
+  }
+  h3.byline {
+  grid-column: 2 / 3;
+  margin-bottom: 2.5em;
+  }
+  div.entry-meta {
+  grid-row: 2 / 3 !important;
+  }
 }
 
 
 .blog header h3 {
+  margin-top: -0.4em;
   margin-bottom: 3em;
   font-weight: unset;
 }
@@ -330,12 +355,16 @@ footer p {
   text-align: left;
   font-size: 2.5em;
   line-height: 1em;
+  a, a:link {
+  text-decoration: none;
+  }
 }
+
 
 .blog div.entry-meta {
   grid-column: 1 / 2;
   text-align: center;
-  margin-top: 0.7rem;
+  margin-top: 1.4rem;
 }
 
 .blog .entry-content {
@@ -440,7 +469,7 @@ body.single .entry-header div.entry-meta {
   text-align: center;
   font-size: 7.5rem; /* Make this dynamic at some point */
   line-height: 6rem;
-  letter-spacing: -.025rem;
+  letter-spacing: -.425rem;
 }
 
 .page-hero .post-thumbnail {
@@ -834,6 +863,14 @@ select.wpcf7-select { /* Are there any select boxes? */
     grid-row: 1 / 2;
   }
 
+  /* Bit messy with the hackety byline for Lifecycles */
+
+  header.subtitle {
+    div.entry-meta {
+    grid-row: 3 / 4 !important;
+    }
+  }
+
   body.single .entry-header div.entry-meta {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -853,6 +890,18 @@ select.wpcf7-select { /* Are there any select boxes? */
 }
 
 @media only screen and (max-width: 55em) {
+  .blog h1.page-title {
+    font-size: 3.3em;
+    margin-top: 1.5em;
+  }
+
+  .blog div.entry-meta {
+    margin-top: 0.7rem;
+  }
+
+  .blog h2.entry-title {
+    font-size: 1.75em;
+  }
   div.slideText {
     grid-column: 1 / -1;
   }
@@ -880,6 +929,19 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 5rem;
   }
 
+  /* Bit messy with the hackety byline for Lifecycles */
+
+  header.subtitle {
+    h3.byline {
+    grid-column: 2 / 3;
+    margin-bottom: 1.5em;
+    width: max-content;
+    }
+    div.entry-meta {
+    grid-row: 3 / 4 !important;
+    }
+  }
+
   article {
     grid-template-columns: .25rem 1fr .25rem;
   }
@@ -902,9 +964,24 @@ select.wpcf7-select { /* Are there any select boxes? */
   }
 
   /* Not loving this, but it works for now */
+  .blog .entry-header {
+    grid-column: 2 / -2;
+    grid-template-columns: 1fr 80px;
+  }
+
+  .blog h2.entry-title {
+    grid-column: 1 / 2;
+  }
+
+  .blog div.entry-meta {
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+
   .blog .entry-content {
     grid-column: 2 / -2;
-    padding: 0 1rem; 
+    padding: 0; 
   }
 
   section.page-front p, section.page-front .tiles {
@@ -915,10 +992,11 @@ select.wpcf7-select { /* Are there any select boxes? */
     text-align: none;
   }
 
+  /* Removing for now... why'd I have it in the first place?
   .entry-content p {
     text-align: justify;
   }
-
+  */
 
   ul#menu-menu-1, li {
     font-size: 1.5rem;
@@ -929,6 +1007,7 @@ select.wpcf7-select { /* Are there any select boxes? */
     display: none;
   }
 
+  /* Pulling this for now...
   .mobilephone {
     display: block;
     position: absolute;
@@ -940,6 +1019,7 @@ select.wpcf7-select { /* Are there any select boxes? */
   .page-id-50 .mobilephone {
     display: none;
   }
+  */
   
   /*-- Not working yet
   img.mobilephone::before {
@@ -993,6 +1073,23 @@ select.wpcf7-select { /* Are there any select boxes? */
     font-size: 2.2em;
   }
 
+  .blog h1.page-title {
+    margin-top: 1em;
+  }
+
+  .blog header h3 {
+    margin-bottom: 1.5em;
+  }
+
+  .blog article {
+    margin: 1em auto;
+  }
+
+  .entry-header h1.entry-title {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
   div.slideText {
     grid-column: 1 / -1;
   }
@@ -1038,11 +1135,6 @@ select.wpcf7-select { /* Are there any select boxes? */
   #comments p.form-submit {
     grid-column: 2 / -2;
     text-align: center;
-  }
-
-  .entry-header h1.entry-title {
-    font-size: 4rem;
-    line-height: 3rem;
   }
 
   /* -- Should apply to all text?
