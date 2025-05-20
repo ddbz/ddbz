@@ -25,7 +25,7 @@ get_header();
 				?>
 				<header>
 					<h1 class="page-title"><?php single_post_title(); ?></h1>
-          <h3 class="byline">about the daddy biz</h3>
+          <h3 class="byline">about the daddyBiz</h3>
 				</header>
 				<?php
 			endif;

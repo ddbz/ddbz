@@ -27,6 +27,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
+	<!--
 		<footer class="entry-footer">
 			<?php
 			edit_post_link(
@@ -46,6 +47,7 @@
 				'</span>'
 			);
 			?>
-		</footer><!-- .entry-footer -->
+		</footer><!-- .entry-footer --> 
+		<!-- Tried adding the other closing end of the comment tag above, but it ends up appearing on the page... weird... -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

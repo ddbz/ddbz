@@ -25,11 +25,12 @@
 <body <?php body_class(); ?>>
 	<header id="masthead" class="site-header">
     <a href="/" class="logo">
-    <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddbz.png">
+    <img class="ddbz" src="<?php echo get_template_directory_uri() ?>/images/ddBz.2.png">
     <img class="dZ" src="<?php echo get_template_directory_uri() ?>/images/dZ.png"></a>
     <div class="menu-menu-1-container">
-      <span>diezDesignBuildZ</span>
+      <img class="title" src="<?php echo get_template_directory_uri() ?>/images/diezDesignBuildz.png">
       <!-- Taking down till I build out the individual pages
+      <span>diezDesignBuildZ</span>
       <ul id="menu-menu-1" class="menu">
         <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="/#diez">Diez</a></li>
         <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="/#design">Design</a></li>
