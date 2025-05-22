@@ -429,6 +429,23 @@ section.page-contact .entry-content p, div.reply, div#respond label, div#respond
   font-weight: bold;
 }
 
+/* -- Having trouble hiding list numbers in Safari
+div.comments ol, div.comments ul  {
+    list-style-type: none !important;
+    padding: 0;
+}
+
+div.comments ol ::marker {
+  display: none;
+}
+*/
+
+::-webkit-details-marker, ::marker {
+  display: none;
+  color: transparent;
+  font-size: 0;
+}
+
 .sidebar-left {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
