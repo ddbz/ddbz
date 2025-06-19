@@ -120,11 +120,20 @@ h1, h2, h3, h4, h5 {
 
 .sweed {
   font-family: 'Seaweed Script', cursive;
+  letter-spacing: 0 !important;
 }
 
 .blog h1.page-title {
   font-family: 'Seaweed Script', cursive;
 }
+
+/*-- Using the other existing selector of yore, 
+*span.pR-title {
+*  font-size: 2.3em;
+*  font-weight: bold;
+*  margin: 0;
+*}
+--*/
 
 a, a:link {
   text-decoration: underline;
@@ -219,8 +228,8 @@ span.cat-links {
 }
 
 header img {
-  height: 43px;
-  margin-top: 5px;
+  height: 38px;
+  margin-top: 8px;
   position: relative;
   z-index: -10;
 }
@@ -242,13 +251,20 @@ time.updated {
 /*-- Temporarily take down links ul#menu-menu-1, li { 
  * Needs media queries still
  * --*/
+
+div.menu-menu-1-container a:hover {
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
 .menu-menu-1-container span {
   list-style-type: none;
   display: inline-block;
-  font-size: 2em;
-  font-weight: unset;
+  font-size: 2.3em;
+  font-weight: bold;
   margin: 0;
-  line-height: 50px;
+  line-height: 44px;
 }
 
 header h1 {
@@ -342,12 +358,18 @@ body.home h2.sweed {
   margin-top: 1.3em;
 }
 
+/* Hiding post-thumbnails for now */
+
+.blog a.post-thumbnail {
+  display: none;
+}
+
 /* Bit messy with the hackety byline for Lifecycles */
 
 header.subtitle {
   h1.entry-title {
   line-height: 0;
-  margin: 1.3em auto .5em auto;
+  margin: 1.35em auto .5em auto;
   }
   h3.byline {
   grid-column: 2 / 3;
@@ -358,6 +380,27 @@ header.subtitle {
   }
 }
 
+/* golden years steez */
+
+header.entry-header {
+  grid-row: 1 / 2;
+  z-index: 10;
+}
+
+div.post-thumbnail {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+header.golden {
+  h1.entry-title{
+    //margin-top: 1.7em;
+  }
+  h3.byline {
+    margin-bottom: 0;
+    margin-left: .7em;
+  }
+}
 
 .blog header h3 {
   margin-top: -0.4em;
@@ -914,13 +957,6 @@ select.wpcf7-select { /* Are there any select boxes? */
     grid-template-columns: 1fr 1.5em 6fr 1.5em 1fr;
   }
 
-  /* - Redundant
-  header img {
-    height: 45px;
-    margin-top: 5px;
-  }
-  */
-
   header ul {
     padding:0;
   }
@@ -940,6 +976,15 @@ select.wpcf7-select { /* Are there any select boxes? */
   header.subtitle {
     div.entry-meta {
     grid-row: 3 / 4 !important;
+    }
+  }
+
+  header.golden {
+    h1.entry-title{
+      grid-row: 2 / 3;
+    }
+    h3.byline {
+      grid-row: 3 / 4;
     }
   }
 
@@ -1018,6 +1063,18 @@ select.wpcf7-select { /* Are there any select boxes? */
     }
   }
 
+  /* Golden hackity */
+
+  header.golden {
+    h1.entry-title{
+      margin-top: 1.8em;
+    }
+    h3.byline {
+      margin-bottom: 0;
+      width: unset;
+    }
+  }
+
   article {
     grid-template-columns: .25rem 1fr .25rem;
   }
@@ -1037,6 +1094,7 @@ select.wpcf7-select { /* Are there any select boxes? */
 
   header img {
     height: 25px;
+    margin-top: 4px;
   }
 
   /* Not loving this, but it works for now */

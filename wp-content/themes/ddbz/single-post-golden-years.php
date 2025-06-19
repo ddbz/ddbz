@@ -50,17 +50,17 @@
     ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header subtitle">
+	<header class="entry-header subtitle golden">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title sweed">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
-      <h3 class="byline">crashing to land</h3>
+      <h3 class="byline">7 17</h3>
 			<div class="entry-meta">
 				<?php
 				ddbz_posted_on();
